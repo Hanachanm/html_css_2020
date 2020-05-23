@@ -1,0 +1,17 @@
+/*
+  <p>後に書いたスタイルが適用されるよ</p>
+*/
+
+p { color: red; }
+p { color: blue; }
+
+
+/*
+  <div id="id" class="class class2">詳細度のポイント計算しよう</div>
+*/
+
+/* 1.0.0 */ #id { color: red; }
+/* 0.1.0 */ .class { color: blue; }
+/* 0.2.0 */ .class.class2 { color: green; }
+/* 0.0.1 */ div { color: yellow; }
+/* 0.1.1 */ div.class { color: black; }
