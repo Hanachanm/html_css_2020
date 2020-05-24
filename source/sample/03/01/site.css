@@ -1,0 +1,255 @@
+.main-title {
+  color: #2fc3af;
+  font-weight: bold;
+  border-bottom: 1px solid #d4c29d;
+}
+
+.sub-title {
+  color: #2fc3af;
+  font-weight: bold;
+}
+
+.advertisement-badge {
+  background-color: #f28eaf;
+  padding: 5px;
+}
+
+.new-arrival-badge {
+  background-color: #fada7a;
+  padding: 5px;
+}
+
+.image {
+  border-radius: 4px;
+  width: 120px;
+}
+
+.icon {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+.face-icon {
+  color: #2fc3af;
+}
+
+.ribbon {
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+
+  background-color: #2fc3a7;
+
+ /*  文字関連 */
+  color: #ffffff;
+  font-size: 12px;
+  vertical-align: middle;
+
+  /* 同じ値にする① */
+  line-height: 20px;
+  height: 20px;
+
+  /* リボンの長さ・太さを変更可能 */
+  padding: 0 20px;
+}
+
+.ribbon::after {
+  content: '';
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  top: 0px;
+  /* ①の半分 */
+  right: -10px;
+  border-width: 10px;
+
+  border-style: solid;
+
+  /* border全てを透明にする */
+  border-color: transparent;
+  /* 上と下だけ色つける→旗にする */
+  border-top-color: #2fc3a7;
+  border-bottom-color: #2fc3a7;
+}
+
+.triangle {
+  border-top: 30px solid #F0897F;
+  border-right: 30px solid #b2ce54;
+  border-bottom: 30px solid #f6da69;
+  border-left: 30px solid #6aa7cd;
+}
+
+.first-triangle {
+  width: 60px;
+  height: 60px;
+}
+
+.second-triangle {
+  width: 30px;
+  height: 30px;
+}
+
+.third-triangle {
+  width: 0px;
+  height: 0px;
+}
+
+.single-triangle {
+  width: 0px;
+  height: 0px;
+  border-top: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-bottom: 30px solid #f6da69;
+  border-left: 30px solid transparent;
+}
+
+.top-bottom-triangle {
+  width: 0px;
+  height: 0px;
+  border-top: 30px solid #F0897F;
+  border-right: 30px solid transparent;
+  border-bottom: 30px solid #f6da69;
+  border-left: 30px solid transparent;
+}
+
+.number {
+  display: inline-block;
+  border-radius: 50%;
+  height: 30px;
+  min-width: 30px;
+  line-height: 2.4;
+  font-size: 12px;
+  text-align: center;
+  background-color: #268bd2;
+  color: #ffffff;
+}
+
+.plus-icon {
+  display: inline-block;
+  border-radius: 50%;
+  border: #ac8c4b 1px solid;
+  height: 30px;
+  min-width: 30px;
+  text-align: center;
+  line-height: 2.4;
+  font-size: 12px;
+}
+
+.plus-icon:hover {
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #268bd2;
+  cursor: pointer;
+  box-shadow: 0px 0px 8px 2px #e2d6bd;
+}
+
+.card {
+  width: 300px;
+  height: 200px;
+  border: #ac8c4b 1px solid;
+  border-radius: 4px;
+}
+
+.button {
+  display: inline-block;
+  color: #dee4ea;
+  background-color: #f7f8fa;
+  border: #b0becc 1px solid;
+  border-radius: 8px;
+  font-weight: bold;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.submit-button {
+  background-color: #2fc3a7;
+  color: #ffffff;
+  border: #8ae3d2 1px solid;
+}
+
+.favorite-button {
+  font-size: 12px;
+  color: #ffffff;
+  background: #ff658b;
+  border: #ffb2c5 1px solid;
+}
+
+.favorite-icon {
+  font-size: 12px;
+  vertical-align: middle;
+  padding-right: 5px;
+}
+
+.search-form {
+  border: 1px solid #8ae3d2;
+  border-radius: 4px;
+  width: 410px;
+  line-height: 2.0;
+  padding-left: 10px;
+}
+
+.search-icon {
+  color: #b0becc;
+  font-size: 20px;
+  vertical-align: middle;
+}
+
+.search-text-area {
+  color: #999999;
+  border: none;
+  font-size: 12px;
+  vertical-align: middle;
+  width: 375px;
+  height: 30px;
+}
+
+.arrow-link{
+  display: block;
+  position: relative;
+  text-decoration: none;
+  color: #3b4b5b;
+  width: 300px;
+}
+
+.arrow-link::after{
+  content: "＞";
+  position: absolute;
+  right:0;
+  color: #d4c29d;
+  font-weight: bold;
+}
+
+/* ulのスタイルをリセット */
+ul
+{
+list-style: none;
+padding: 0;
+margin: 0;
+}
+
+/* パンくずの設定 */
+.breadcrumb-item {
+  display:inline;
+  color: #536a80;
+  font-size: 12px;
+  vertical-align: bottom;
+}
+
+.breadcrumb-item-link {
+  color: #536a80;
+  font-size: 12px;
+  cursor: pointer;
+  vertical-align: bottom;
+}
+
+.breadcrumb-item::after {
+  content: '>';
+  padding: 0 2px;
+  color: #536a80;
+  font-size: 14px;
+}
+
+.breadcrumb-item:last-child::after {
+  content: '';
+}
