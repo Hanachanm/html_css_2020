@@ -1,0 +1,30 @@
+.buttons {
+  display: flex;
+
+  .buttons__item {
+    display: inline-block;
+    color: #dee4ea;
+    background-color: #f7f8fa;
+    border: #b0becc 1px solid;
+    border-radius: 8px;
+    font-weight: bold;
+    padding: 10px 20px;
+    text-align: center;
+    margin-right: 20px;
+    font-size: 15px;
+
+    @media(max-width: 600px) {
+      margin: 5px 0;
+    }
+
+    &.-submit {
+      background-color: #2fc3a7;
+      color: #ffffff;
+      border: #8ae3d2 1px solid;
+    }
+  }
+
+  @media(max-width: 600px) {
+    flex-direction: column;
+  }
+}

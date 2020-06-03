@@ -1,0 +1,40 @@
+.header-link {
+  display: flex;
+
+  .header-link__item {
+    margin-right: 15px;
+
+    @include screen(tablet) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  .header-link__text {
+    font-size: 16px;
+    vertical-align: middle;
+
+    @include screen(tablet) {
+      font-size: 10px;
+      text-align: center;
+      order: 2;
+    }
+
+    @include screen(smartphone) {
+      display: none;
+    }
+  }
+
+  .header-link__icon {
+    font-size: 40px;
+    vertical-align: middle;
+
+    @include screen(tablet) {
+      order: 1;
+    }
+
+    @include screen(smartphone) {
+      font-size: 30px;
+    }
+  }
+}

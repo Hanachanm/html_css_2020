@@ -1,0 +1,35 @@
+.grid-images {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 300px 300px 300px;
+  margin: 0 auto;
+  width: 940px;
+
+  @include screen(tablet) {
+    grid-template-columns: 300px 300px;
+    width: 620px;
+  }
+
+  @include screen(smartphone) {
+    grid-template-columns: 300px;
+    width: 300px;
+  }
+
+  .grid-images__item {
+    width: 300px;
+  }
+}
+
+// flexで動的に変えるなら..
+// .grid-images {
+//   display: flex;
+//   flex-wrap: wrap;
+//   justify-content: space-between;
+//   margin: 0 auto;
+//   width: 80vw;
+
+//   .grid-images__item {
+//     margin: 0 20px 20px 0;
+//     width: 300px;
+//   }
+// }

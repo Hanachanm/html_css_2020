@@ -1,0 +1,17 @@
+.header {
+  border-bottom: 1px solid #222347;
+
+  .header__container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px;
+  }
+
+  .header__log-image {
+    width: 250px;
+
+    @include screen(smartphone) {
+      width: 200px;
+    }
+  }
+}
