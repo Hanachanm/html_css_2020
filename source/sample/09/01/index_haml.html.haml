@@ -1,0 +1,18 @@
+!!! 5
+%html{ lang: 'ja' }
+  %head
+    %meta{ charset: 'UTF-8' }
+    %meta{ name: 'description', content: '実習用のサンプルコードです' }
+    %meta{ name: 'viewport', content: 'width=device-width, initial-scale=1' }
+    %link{ href: "https://fonts.googleapis.com/icon?family=Material+Icons", rel: 'stylesheet'}
+    = stylesheet_link_tag 'site'
+    %title 実習09のサンプル
+  %body
+    %header.header
+      .header__container
+        %h1.header__title
+          %a{ href: '#' }
+            %img.header__logo{ src: './images/logo.png' }
+        .header__search-box
+          %span.material-icons.header__search-icon search
+          %input{ type: 'text', placeholder: '例）式場名などの気になるワード', class: "header__search-input" }
