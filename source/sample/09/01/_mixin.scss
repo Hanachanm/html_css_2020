@@ -9,3 +9,10 @@
     }
   }
 }
+
+@mixin title($font-size: 20px) {
+    font-size: $font-size;
+    font-weight: bold;
+    padding: 0 0 5px 10px;
+    border-bottom: 1px solid #d4c29d;
+}
