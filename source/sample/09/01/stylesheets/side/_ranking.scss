@@ -1,0 +1,150 @@
+.ranking {
+  margin: 20px 0;
+  counter-reset: ranking-place;
+
+  .ranking__title {
+    @include title;
+  }
+
+  .ranking__place {
+    display: flex;
+    margin-top: 10px;
+    position: relative;
+
+    &::before {
+      content: "";
+      top: 0;
+      left: 0;
+      border-bottom: 40px solid transparent;
+      border-left: 40px solid #f1f3f6;
+      position: absolute;
+      z-index: 100;
+    }
+
+    &:first-of-type::before {
+      border-left: 40px solid #ac8c4b;
+    }
+
+    &:nth-of-type(2)::before {
+      border-left: 40px solid #8198ae;
+    }
+
+    &:nth-of-type(3)::before {
+      border-left: 40px solid #cc9966;
+    }
+
+    &::after {
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      content: counter(ranking-place);
+      counter-increment: ranking-place;
+      font-size: 12px;
+      z-index: 101;
+    }
+
+    &:first-of-type::after {
+      color: #ffffff;
+    }
+
+    &:nth-of-type(2)::after {
+      color: #ffffff;
+    }
+
+    &:nth-of-type(3)::after {
+      color: #ffffff;
+    }
+  }
+
+  .ranking__place-image {
+    margin-right: 5px;
+    position: relative;
+  }
+
+  .ranking__place-information {
+    margin-top: 5px;
+    font-size: 12px;
+  }
+
+  .ranking__place-name {
+    font-size: 14px;
+    word-wrap: break-word;
+    margin-bottom: 10px;
+  }
+
+  .ranking__place-review-icon {
+    font-size: 14px;
+  }
+
+  .ranking__place-review-rating {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #ff658b;
+  }
+
+  .ranking__more {
+    margin-top: 10px;
+    text-align: right;
+  }
+
+  .ranking__more-link {
+    text-decoration: none;
+    color: #ac8c4b;
+    font-size: 14px;
+
+    &:after {
+      display: inline-block;
+      content: ">";
+      color: white;
+      background-color: #ac8c4b;
+      border-radius: 50%;
+      height: 18px;
+      min-width: 18px;
+      line-height: 18px;
+      text-align: center;
+      margin-left: 5px;
+    }
+
+    &:hover {
+      color: #816938;
+      border-bottom: 1px solid #816938;
+
+      &:after {
+        background-color: #816938;
+      }
+    }
+  }
+}
+
+@include screen(smartphone) {
+  .ranking {
+    .ranking__places {
+      margin: 0 auto;
+      width: 90vw;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .ranking__place {
+      flex-direction: column;
+      width: 25vw;
+
+      &:nth-child(4){
+        display: none;
+      }
+
+      &:nth-child(5){
+        display: none;
+      }
+    }
+
+    .ranking__place-image {
+      width: 25vw;
+    }
+
+    .ranking__more {
+      margin-right: 10px;
+    }
+  }
+
+}
