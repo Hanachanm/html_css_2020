@@ -12,8 +12,7 @@
 
   .wrapper__side {
     flex: 1;
-    height: 500px;
-    background-color: rgb(245, 215, 244);
+    margin-left: 15px;
   }
 }
 
@@ -26,11 +25,6 @@
     .wrapper__main {
       height: 500px;
       background-color: rgb(204, 228, 247);
-    }
-
-    .wrapper__side {
-      height: 500px;
-      background-color: rgb(245, 215, 244);
     }
   }
 }

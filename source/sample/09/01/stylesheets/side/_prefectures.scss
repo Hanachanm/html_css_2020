@@ -1,0 +1,35 @@
+.prefectures {
+  margin-top: 5px;
+  .prefectures__title {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0 0 5px 10px;
+    border-bottom: 1px solid #d4c29d;
+  }
+
+  .prefectures__list-item {
+    border-bottom: 1px solid #f0eadd;
+    padding: 12px 10px;
+    font-size: 14px;
+    position: relative;
+  }
+
+  .prefectures__list-item::after {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: #d4c29d;
+    content: "＋";
+    font-size: 20px;
+  }
+
+  .prefectures__list-item:first-of-type::after {
+    content: "＞";
+  }
+}
+
+@include screen(smartphone) {
+  .prefectures {
+    margin-top: 10px;
+  }
+}
