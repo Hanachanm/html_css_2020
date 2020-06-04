@@ -1,6 +1,7 @@
 .navigation-bar {
   margin: 20px auto 10px;
-  width: 980px;
+  width: 95vw;
+  max-width: 980px;
 
   @include screen(smartphone) {
     margin: 0;
@@ -40,7 +41,7 @@
   }
 
   .navigation-bar__item-icon {
-    font-size: 15px;
+    font-size: 14px;
     vertical-align: middle;
 
     @include screen(smartphone) {
