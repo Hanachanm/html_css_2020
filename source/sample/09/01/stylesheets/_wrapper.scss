@@ -1,0 +1,36 @@
+.wrapper {
+  display: flex;
+  width: 95vw;
+  max-width: 980px;
+  margin: 20px auto 10px;
+
+  .wrapper__main {
+    flex: 2;
+    height: 500px;
+    background-color: rgb(204, 228, 247);
+  }
+
+  .wrapper__side {
+    flex: 1;
+    height: 500px;
+    background-color: rgb(245, 215, 244);
+  }
+}
+
+@include screen(smartphone) {
+  .wrapper {
+    display: block;
+    width: 100vw;
+    margin: 20px auto 10px;
+
+    .wrapper__main {
+      height: 500px;
+      background-color: rgb(204, 228, 247);
+    }
+
+    .wrapper__side {
+      height: 500px;
+      background-color: rgb(245, 215, 244);
+    }
+  }
+}
