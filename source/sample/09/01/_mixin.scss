@@ -16,3 +16,31 @@
     padding: 0 0 5px 10px;
     border-bottom: $border-px $border-style #d4c29d;
 }
+
+@mixin more-link {
+  text-decoration: none;
+  color: #ac8c4b;
+  font-size: 14px;
+
+  &:after {
+    display: inline-block;
+    content: ">";
+    color: white;
+    background-color: #ac8c4b;
+    border-radius: 50%;
+    height: 18px;
+    min-width: 18px;
+    line-height: 18px;
+    text-align: center;
+    margin-left: 5px;
+  }
+
+  &:hover {
+    color: #816938;
+    border-bottom: 1px solid #816938;
+
+    &:after {
+      background-color: #816938;
+    }
+  }
+}

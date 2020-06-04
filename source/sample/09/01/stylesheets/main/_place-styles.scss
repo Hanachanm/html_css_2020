@@ -28,6 +28,15 @@
     font-weight: bold;
     text-align: center;
   }
+
+  .place-style__more {
+    margin-top: 10px;
+    text-align: right;
+  }
+
+  .place-style__more-link {
+    @include more-link;
+  }
 }
 
 @include screen(smartphone) {
@@ -64,6 +73,10 @@
       line-height: 30px;
       background-color: #d4c29d;
       z-index: 101;
+    }
+
+    .place-style__more {
+      margin-right: 10px;
     }
   }
 }
