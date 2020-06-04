@@ -1,0 +1,19 @@
+.top-section {
+  width: 800px;
+  margin: 0 auto;
+
+  .top-section__image {
+    width: 800px;
+  }
+}
+
+@include screen(smartphone) {
+  .top-section {
+    width: 100vw;
+    margin: 0 auto;
+
+    .top-section__image {
+      width: 100vw;
+    }
+  }
+}
