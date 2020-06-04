@@ -1,9 +1,12 @@
 .header {
+  border-bottom: 1px solid #f0eadd;
+
   .header__container {
     display: flex;
     justify-content: space-between;
-    margin: 20px auto 30px;
+    margin: 20px auto;
     width: 80vw;
+    max-width: 980px;
   }
 
 
@@ -36,8 +39,6 @@
 
 @include screen(smartphone) {
   .header {
-    border-bottom: 1px solid #f0eadd;
-
     .header__container {
       display: flex;
       justify-content: space-between;
