@@ -1,0 +1,65 @@
+.navigation-bar {
+  margin: 20px auto 10px;
+  width: 980px;
+
+  @include screen(smartphone) {
+    margin: 0;
+    padding: 10px 0;
+    border-bottom: 1px solid #f0eadd;
+    width: 100vw;
+  }
+
+  .navigation-bar__container {
+    @include screen(smartphone) {
+      width: 90vw;
+      margin: 0 auto;
+    }
+  }
+
+  .navigation-bar__items {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 75px;
+
+    @include screen(smartphone) {
+      margin: 0;
+    }
+  }
+
+  .navigation-bar__item {
+    color: #8198ae;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0 20px;
+
+    @include screen(smartphone) {
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+    }
+  }
+
+  .navigation-bar__item-icon {
+    font-size: 15px;
+    vertical-align: middle;
+
+    @include screen(smartphone) {
+      order: 1;
+      font-size: 20px;
+      margin-bottom: 5px;
+      text-align: center;
+
+    }
+  }
+
+  .navigation-bar__item-text {
+    font-weight: bold;
+    vertical-align: middle;
+
+    @include screen(smartphone) {
+      order: 2;
+      font-size: 10px;
+      text-align: center;
+    }
+  }
+}
