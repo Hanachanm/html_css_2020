@@ -3,7 +3,7 @@
   counter-reset: ranking-place;
 
   .ranking__title {
-    @include title;
+    @include title(20px, solid, 1px);
   }
 
   .ranking__place {
@@ -95,6 +95,9 @@
 
 @include screen(smartphone) {
   .ranking {
+    .ranking__title {
+      @include title
+    }
     .ranking__places {
       margin: 0 auto;
       width: 90vw;

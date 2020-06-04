@@ -1,6 +1,6 @@
 .prefectures {
   .prefectures__title {
-    @include title;
+    @include title(20px, solid, 1px);
   }
 
   .prefectures__list-item {
@@ -27,5 +27,9 @@
 @include screen(smartphone) {
   .prefectures {
     margin-top: 10px;
+
+    .prefectures__title {
+      @include title
+    }
   }
 }

@@ -2,7 +2,7 @@
   margin-top: 20px;
 
   .place-styles__title {
-    @include title(22px, double, 5px);
+    @include title;
   }
 
   .place-styles__lead-text {
