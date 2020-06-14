@@ -1,15 +1,15 @@
-.item {
+.margin-item {
   border: 2px solid #00bbdd;
   padding: 0 60px 20px 0;
 }
 
-.item {
+.padding-item {
   background-color: #00bbdd;
   height: 40px;
   margin-bottom: 4px;
 }
 
-.item {
+.margin-item-2 {
   border: 2px solid #ffffff;
   background-color: #00bbdd;
   padding: 0 60px 20px 0;
