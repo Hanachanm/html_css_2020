@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang='ja'>
+  <head>
+    <meta charset='UTF-8'>
+    <meta content='実習用のサンプルコードです' name='description'>
+    <meta content='width=1024' name='viewport'>
+    <link href="./site.css" rel="stylesheet"/>
+    <link href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet'>
+    <title>HTML/CSS 研修 2020</title>
+  </head>
+  <body>
+    <h1>実習05のサンプル</h1>
+    <h2>flex, cssグリッドを使ったよくあるレイアウト</h2>
+
+    <section class="section-container">
+      <div class="flex">
+        <h3>Flex</h3>
+        <h3>２カラム</h3>
+        <div class="flex-container">
+          <div class="flex-double-column-main">item</div>
+          <div class="flex-double-column-side">itemitemitemitem</div>
+        </div>
+
+        <h4>２カラム＋固定</h4>
+        <div class="flex-container">
+          <div class="flex-fix-double-column-main">itemitemitem</div>
+          <div class="flex-fix-double-column-side">item</div>
+        </div>
+
+        <h4>3カラム＋縦にも並べる</h4>
+        <div class="flex-wrap-container">
+          <div class="flex-wrap-item">itemitemitem</div>
+          <div class="flex-wrap-item">item</div>
+          <div class="flex-wrap-item">itemitemitem</div>
+          <div class="flex-wrap-item">item</div>
+          <div class="flex-wrap-item">itemitemitem</div>
+          <div class="flex-wrap-item">item</div>
+        </div>
+
+        <h4>両端に寄せる</h4>
+        <div class="flex-space-between-container">
+          <div class="flex-space-between-item">itemitemitem</div>
+          <div class="flex-space-between-item">item</div>
+        </div>
+
+        <h4>タイル型</h4>
+        <div class="flex-tile-container">
+          <div class="flex-tile-item">item</div>
+          <div class="flex-tile-item">item</div>
+          <div class="flex-tile-item">item</div>
+          <div class="flex-tile-item">item</div>
+          <div class="flex-tile-item">item</div>
+          <div class="flex-tile-item">item</div>
+        </div>
+
+        <h4>文章中に画像を入れる</h4>
+        <div class="flex-inline">
+          <div class="inline-item">文章中にテキストと</div>
+          <div class="inline-item"><img class="flex-icon" src="./logo_dvs.png"></div>
+          <div class="inline-item">が出てきます</div>
+        </div>
+      </div>
+
+      <div class="grid">
+        <h3>CSS grid</h3>
+        <h3>２カラム</h3>
+        <div class="grid-double-column-container">
+          <div class="grid-column-main">item</div>
+          <div class="grid-column-side">itemitemitemitem</div>
+        </div>
+
+        <h4>２カラム＋固定</h4>
+        <div class="grid-fix-double-column-container">
+          <div class="grid-column-main">itemitemitem</div>
+          <div class="grid-column-side">item</div>
+        </div>
+
+        <h4>3カラム＋縦にも並べる</h4>
+        <div class="grid-wrap-container">
+          <div class="grid-wrap-item">itemitemitem</div>
+          <div class="grid-wrap-item">item</div>
+          <div class="grid-wrap-item">itemitemitem</div>
+          <div class="grid-wrap-item">item</div>
+          <div class="grid-wrap-item">itemitemitem</div>
+          <div class="grid-wrap-item">item</div>
+        </div>
+
+        <h4>両端に寄せる</h4>
+        <div class="grid-space-between-container">
+          <div class="grid-space-between-item">itemitemitem</div>
+          <div class="grid-space-between-item">item</div>
+        </div>
+
+        <h4>タイル型</h4>
+        <div class="grid-tile-container">
+          <div class="grid-tile-item">item</div>
+          <div class="grid-tile-item">item</div>
+          <div class="grid-tile-item">item</div>
+          <div class="grid-tile-item">item</div>
+          <div class="grid-tile-item">item</div>
+          <div class="grid-tile-item">item</div>
+        </div>
+
+        <h4>文章中に画像を入れる</h4>
+        <div class="grid-inline">
+          <div>文章中にテキストと</div>
+          <div><img class="flex-icon" src="./logo_dvs.png"></div>
+          <div>が出てきます</div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
