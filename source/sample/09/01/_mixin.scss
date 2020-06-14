@@ -1,0 +1,46 @@
+@mixin screen($screen) {
+  @if ($screen == pc) {
+    @media(min-width: 768px) {
+      @content;
+    }
+  } @else if ($screen == smartphone) {
+    @media(max-width: 768px) {
+      @content;
+    }
+  }
+}
+
+@mixin title($font-size: 22px, $border-style: double,  $border-px: 5px) {
+    font-size: $font-size;
+    font-weight: bold;
+    padding: 0 0 5px 10px;
+    border-bottom: $border-px $border-style #d4c29d;
+}
+
+@mixin more-link {
+  text-decoration: none;
+  color: #ac8c4b;
+  font-size: 14px;
+
+  &:after {
+    display: inline-block;
+    content: ">";
+    color: white;
+    background-color: #ac8c4b;
+    border-radius: 50%;
+    height: 18px;
+    min-width: 18px;
+    line-height: 18px;
+    text-align: center;
+    margin-left: 5px;
+  }
+
+  &:hover {
+    color: #816938;
+    border-bottom: 1px solid #816938;
+
+    &:after {
+      background-color: #816938;
+    }
+  }
+}

@@ -1,0 +1,30 @@
+.wrapper {
+  display: flex;
+  width: 95vw;
+  max-width: 980px;
+  margin: 20px auto 10px;
+
+  .wrapper__main {
+    flex: 2;
+  }
+
+  .wrapper__side {
+    flex: 1;
+    margin-left: 15px;
+  }
+}
+
+@include screen(smartphone) {
+  .wrapper {
+    display: block;
+    width: 100vw;
+    margin: 20px auto 10px;
+
+    .wrapper__main {
+    }
+
+    .wrapper__side {
+      margin-left: 0;
+    }
+  }
+}

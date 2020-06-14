@@ -1,0 +1,82 @@
+.place-styles {
+  margin-top: 20px;
+
+  .place-styles__title {
+    @include title;
+  }
+
+  .place-styles__lead-text {
+    margin: 20px 10px;
+    font-size: 14px;
+  }
+
+  .place-style__container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .place-style__image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+  }
+
+  .place-style__name {
+    margin-top: 5px;
+    font-size: 12px;
+    padding: 0 10px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .place-style__more {
+    margin-top: 10px;
+    text-align: right;
+  }
+
+  .place-style__more-link {
+    @include more-link;
+  }
+}
+
+@include screen(smartphone) {
+  .place-styles {
+    .place-style__container {
+      margin: 0 auto;
+      width: 95vw;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+    }
+
+    .place-style {
+      position: relative;
+    }
+
+    .place-style__image {
+      width: 45vw;
+      height: 30vw;
+      object-fit: cover;
+      z-index: 100;
+    }
+
+    .place-style__name {
+      position: absolute;
+      box-sizing: border-box;
+      color: #ffffff;
+      font-weight: bold;
+      font-size: 14px;
+      bottom: 0px;
+      left: 0px;
+      right: 0;
+      width: 45vw;
+      height: 30px;
+      line-height: 30px;
+      background-color: #d4c29d;
+      z-index: 101;
+    }
+
+    .place-style__more {
+      margin-right: 10px;
+    }
+  }
+}
