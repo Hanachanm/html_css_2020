@@ -1,0 +1,59 @@
+.item {
+  background-color: #00bbdd;
+  border: 2px solid #000000;
+  color: #ffffff;
+  width: 80px;
+  padding: 10px;
+}
+
+.clearfix-container {
+  height: 100px;
+}
+
+.clearfix-container::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.clearfix-item {
+  margin: 10px;
+  float: left;
+}
+
+.clearfix-bottom {
+  background-color: grey;
+  width: 500px;
+  height: 100px;
+}
+
+.float-item {
+  margin: 10px;
+  float: left;
+}
+
+.float-bottom {
+  background-color: grey;
+  width: 500px;
+  height: 100px;
+}
+
+.table-container {
+  display: table;
+}
+
+.table-item {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.grid-container {
+  width: 400px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
