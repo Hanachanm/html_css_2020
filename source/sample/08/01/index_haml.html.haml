@@ -1,0 +1,51 @@
+!!! 5
+%html{ lang: 'ja' }
+  %head
+    %meta{ charset: 'UTF-8' }
+    %meta{ name: 'description', content: '実習用のサンプルコードです' }
+    %meta{ name: 'viewport', content: 'width=device-width, initial-scale=1' }
+    %link{ href: "https://fonts.googleapis.com/icon?family=Material+Icons", rel: 'stylesheet'}
+    = stylesheet_link_tag 'site'
+    %title 実習08のサンプル
+  %body
+    %h1 レスポンシブ対応
+
+    %h2 文字サイズと余白を調整する
+    .menu
+      .menu__item TOP
+      .menu__item NEWS
+      .menu__item MYPAGE
+
+    %h2 コンテンツを縦並びにする
+    .contents
+      .contents__content コンテンツ１
+      .contents__content コンテンツ2
+
+    %h2 ボタン
+    .buttons
+      .buttons__item マイページへ
+      .buttons__item.-submit 登録する
+
+    %h2 ヘッダー
+    .header
+      .header__container
+        %img.header__log-image{ src: './logo_dvs.png' }
+        .header-link
+          .header-link__item
+            %span.header-link__text HOME
+            %span.material-icons.header-link__icon home
+          .header-link__item
+            %span.header-link__text SEARCH
+            %span.material-icons.header-link__icon search
+          .header-link__item
+            %span.header-link__text MYPAGE
+            %span.material-icons.header-link__icon person
+
+    %h2 画像を縦並びにする
+    .grid-images
+      %img.grid-images__item{ src: './place01.jpg' }
+      %img.grid-images__item{ src: './place01.jpg' }
+      %img.grid-images__item{ src: './place01.jpg' }
+      %img.grid-images__item{ src: './place01.jpg' }
+      %img.grid-images__item{ src: './place01.jpg' }
+      %img.grid-images__item{ src: './place01.jpg' }

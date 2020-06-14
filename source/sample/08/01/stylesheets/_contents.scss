@@ -1,0 +1,23 @@
+// PC(デフォルト)
+.contents {
+  display: flex;
+  justify-content: space-between;
+
+  .contents__content {
+    background-color: #ffedf1;
+    font-size: 3rem;
+  }
+}
+
+// 600px以下
+@media(max-width: 600px) {
+  .contents {
+    display: flex;
+    flex-direction: column;
+
+    .contents__content {
+      background-color: #e1f9f5;
+      font-size: 1.6rem;
+    }
+  }
+}
