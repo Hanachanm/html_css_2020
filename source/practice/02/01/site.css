@@ -1,0 +1,49 @@
+header {
+  border-bottom: 1px solid #baa06c;
+}
+
+#title {
+  font-size: 32px;
+  color: #000000;
+}
+
+.lead-text {
+  font-weight: bold;
+  color: #9966FF;
+}
+
+.lead-text span {
+  color: #FF6633;
+}
+
+li {
+  color: #3b4b5b;
+}
+
+li:nth-child(even) {
+  color: #DCC2FF;
+}
+
+li:nth-child(odd) {
+  color: #FFC7AF;
+}
+
+li:hover {
+  color: #7B3CFF;
+}
+
+a:link {
+  color: blue;
+}
+
+a:visited {
+  color: red;
+}
+
+a:hover {
+  background: yellow;
+}
+
+
+
+
