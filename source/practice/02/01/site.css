@@ -44,6 +44,10 @@ a:hover {
   background: yellow;
 }
 
+a:active {
+  color: blue;
+}
+
 
 
 
