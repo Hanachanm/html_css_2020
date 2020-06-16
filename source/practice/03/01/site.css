@@ -270,5 +270,63 @@ ul {
   border: 2px solid #ffffff;
 }
 
+.ribbon {
+  position: relative;
+  display: inline-block;
+  background-color: #8ae3d2;
+  color: #ffffff;
+  padding: 5px 10px;
+  height: 30px;
+  box-sizing: border-box;
+}
+
+.ribbon::after {
+  position: absolute;
+  top: 0;
+  right: -15px;
+  content: "";
+  border-top:  15px solid #8ae3d2;
+  border-bottom: 15px solid #8ae3d2;
+  border-right: 15px solid transparent;
+  border-left: 15px solid transparent;
+  width: 0;
+  height: 0;
+}
+
+.work-hard-ribbon {
+   position: relative;
+   display: inline-block;
+   background-color: #8ae3d2;
+   color: #ffffff;
+   padding: 5px 10px;
+   height: 30px;
+   box-sizing: border-box;
+ }
+
+.work-hard-ribbon::after {
+  position: absolute;
+  top: 0;
+  right: -15px;
+  content: "";
+  border-top:  15px solid #8ae3d2;
+  border-bottom: 15px solid #8ae3d2;
+  border-right: 15px solid transparent;
+  border-left: 15px solid transparent;
+  width: 0;
+  height: 0;
+}
+
+.work-hard-ribbon::before {
+  position: absolute;
+  top: 0;
+  left: -15px;
+  content: "";
+  border-top: 15px solid #8ae3d2;
+  border-bottom: 15px solid #8ae3d2;
+  border-right: 15px solid transparent;
+  border-left: 15px solid transparent;
+  width: 0;
+  height: 0;
+}
 
 
