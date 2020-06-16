@@ -1,0 +1,31 @@
+.title {
+  color: darkturquoise;
+}
+
+.title:hover{
+  background-color: olive;
+}
+
+.line {
+  border: 1px olive solid;
+}
+
+.css {
+  color: olive;
+}
+
+.bold {
+  color: red;
+}
+
+.list li:nth-child(even) {
+  color: red;
+}
+
+.list li:nth-child(1) {
+  color: darkturquoise;
+}
+
+.list li:nth-child(5) {
+  color: olive;
+}
