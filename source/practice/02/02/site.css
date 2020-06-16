@@ -1,0 +1,10 @@
+p { color: red; }
+p { color: blue; }
+
+#id { color: orchid; }
+div { color: green; }
+div.class { color: purple; }
+.class.class2 { color: black; }
+div.class.class2.class3.class4 { color: lightseagreen; }
+
+
