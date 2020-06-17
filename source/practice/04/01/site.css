@@ -101,15 +101,13 @@
   border-bottom: 1px solid #c6ae7d;;
 }
 .place:nth-child(1) {
+    border-radius: 8px;
     background-color: #f28eaf;;
 }
 .place:last-child {
   border-bottom: 1px solid #ffffff;
 }
 .waku {
-  /*background-color: #f28eaf;*/
-  border-top: 20px solid #f28eaf;
-
   padding: 0 0 10px;
   border: 1px solid #c6ae7d;
   width: 550px;
