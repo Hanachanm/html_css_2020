@@ -1,0 +1,168 @@
+.content-box {
+  width: 100px;
+  height: 100px;
+  padding: 20px;
+  border: 5px solid #2fc3a7;
+  margin-bottom: 50px;
+}
+
+.border-box {
+  box-sizing: border-box;
+  width: 100px;
+  height: 100px;
+  padding: 20px;
+  border: 5px solid #2fc3a7;
+  margin-top: -50px;
+}
+
+.item {
+  width: 100px;
+  height: 30px;
+  padding: 5px 10px;
+  text-align: center;
+
+  background-color: #2fc3a7;
+  border: 1px solid #000000;
+  color: #FFFFFF;
+}
+
+.clearfix-container {
+  height: 100px;
+}
+
+.clearfix-item {
+  margin: 10px;
+  float: left;
+}
+
+.clearfix-bottom {
+  background-color: gray;
+  width: 500px;
+  height: 100px;
+}
+
+.float-item {
+  margin: 10px;
+  float: left;
+}
+
+.table-container {
+  display: table;
+}
+
+.table-item {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.grid-container {
+  width: 400px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+.flex-container-chapel {
+  margin: 10px;
+  display: flex;
+  border-radius: 8px;
+  border: 2px solid #d4c29d;
+  width: 500px;
+  height: 150px;
+}
+
+.item-text-box {
+  width: 400px;
+  height: 300px;
+}
+
+.point {
+  position: relative;
+  background-color: #2fc3a7;
+  color: #FFFFFF;
+
+  width: 170px;
+  height: 25px;
+  margin-bottom: 10px;
+  text-align:  center;
+}
+
+.point:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -12.5px;
+  border-top: 12.5px solid #2fc3a7;
+  border-bottom: 12.5px solid  #2fc3a7;
+  border-right: 12.5px solid transparent;
+  border-left: 12.5px solid transparent;
+  width: 0px;
+  height: 0px;
+}
+
+.chapel-img {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  margin-left: auto;
+}
+
+.chapel-name {
+  color: #2fc3a7;
+  margin-left: 10px;
+}
+
+.area {
+  color: #3b4b5b;
+  margin-left: 0;
+  margin-top: -3px;
+  font-size: 10px;
+}
+
+.icon {
+  vertical-align: middle;
+  font-size: 10px;
+  margin-left: 10px;
+  margin-right: -5px;
+}
+
+.explanation {
+  color: #3b4b5b;
+  margin-left: 10px;
+  margin-top: -5px;
+  font-size: 10px;
+}
+
+
+.vertical-flex-container-chapel {
+  margin: -2px 10px 0 10px;
+  display: flex;
+  border: 2px solid #d4c29d;
+  width: 500px;
+  /* height: 150px; */
+  margin-bottom: auto;
+  padding-top: 10px;
+}
+
+.first {
+  background-color: #fff2e6;
+  border-radius: 8px 8px 0 0 ;
+}
+
+.last {
+  border-radius: 0 0 8px 8px;
+}
+
+.point-first {
+  background-color: #ff9933;
+  /* font-size: 12px; */
+}
+
+.point-first:after {
+  border-top: 12.5px solid #ff9933;
+  border-bottom: 12.5px solid  #ff9933;
+}
