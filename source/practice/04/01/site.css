@@ -1,0 +1,158 @@
+.content-box {
+  width: 100px;
+  height: 100px;
+  border: 3px solid #b2ce54;
+}
+
+.border-box {
+  width: 100px;
+  height: 100px;
+  border: 3px solid #b2ce54;
+  box-sizing: border-box;
+  margin-top: -50px;
+}
+
+.item {
+  width: 100px;
+  height: 30px;
+  background-color: #8ae3d2;
+  border: 2px solid #3b4b5b;
+  padding: 5px 10px;
+  color: #ffffff;
+}
+
+.clearfix-container {
+  height: 100px;
+}
+
+.clearfix-item {
+  margin: 10px;
+  float: left;
+}
+
+.clearfix-bottom {
+  background-color: grey;
+  width: 500px;
+  height: 100px;
+}
+
+.table-container {
+  display: table;
+}
+
+.table-item {
+  display: table-cell;
+  vertical-align: middle;
+  height: 50px;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.grid-container {
+  width: 400px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+.hotel-container{
+  border: 1px solid #e2d6bd;
+  border-radius: 10px;
+  width: 750px;
+  box-shadow: 1px 2px #ccc7bc;
+  padding-bottom: 10px;
+}
+
+.topic-ribbon {
+  position:relative;
+  display: inline-block;
+  vertical-align: middle;
+  background-color: #8ae3d2;
+  color: #ffffff;
+  padding: 3px 15px;
+  /*height: 30px;*/
+  margin: 10px 0;
+}
+
+.topic-ribbon::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: -15px;
+  border-top: 15px solid #8ae3d2;
+  border-bottom: 15px solid #8ae3d2;
+  border-right: 16px solid transparent;
+  border-left: 16px solid transparent;
+  width: 0;
+  height: 0;
+}
+
+.hotel-name {
+  color: #8ae3d2;
+  display: block;
+  font-size: 24px;
+}
+
+
+.material-icons.area-icon {
+  color: #3b4b5b;
+  font-size: 14px;
+  line-height: 2;
+  vertical-align: middle
+}
+
+.area-text {
+  color: #3b4b5b;
+  font-size: 14px;
+  line-height: 2;
+  vertical-align: middle;
+}
+
+.lead-text {
+  color: #3b4b5b;
+  font-size: 14px;
+  margin-top: 7px;
+}
+
+.hotel-image {
+  width: 150px;
+  height: 150px;
+  /*border-radius: 4px;*/
+  margin: 10px;
+}
+
+.text-container {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.hotel-container-item {
+  display: flex;
+  border-bottom: 1px solid #e2d6bd;
+}
+
+.information-container {
+  width: 580px;
+}
+
+.hotel-container-last-item {
+  border-bottom: none;
+}
+
+.hotel-container-item.hotel-container-first-item {
+  background-color: #ffebe3;
+  border-radius: 10px 10px 0 0;
+}
+
+.topic-ribbon.first-topic-ribbon {
+  background-color: #fc723a;
+}
+
+.topic-ribbon.first-topic-ribbon::after {
+  border-top: 15px solid #fc723a;
+  border-bottom: 15px solid #fc723a;
+  border-right: 16px solid transparent;
+  border-left: 16px solid transparent;
+}
