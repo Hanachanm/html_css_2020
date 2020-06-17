@@ -1,0 +1,27 @@
+.container{
+    /*display: flex;*/
+    border-top: solid 4px burlywood;
+}
+.question-container {
+    display: flex;
+    border-bottom: solid 1px burlywood;
+}
+.question-post {
+    position: relative;
+}
+.question-opacity {
+    opacity: 0.5;
+}
+.question-text {
+}
+.question-status {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+}
+.question-category {
+    position: relative;
+}
+.comment-number {
+
+}
