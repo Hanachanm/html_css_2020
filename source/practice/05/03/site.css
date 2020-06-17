@@ -1,0 +1,33 @@
+.flex-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  border-bottom: 1px solid #d4c29d;
+  padding: 10px 10px;
+}
+
+.item-first {
+  border-top: 2px solid #d4c29d;
+}
+
+.item-flex-container {
+  display: flex;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 3px solid rgba(212,194,157,0.4);
+}
+
+.text {
+  margin-left: 10px;
+}
+
+.sub-item-flex-container {
+  display: flex;
+  justify-content: space-between
+}
