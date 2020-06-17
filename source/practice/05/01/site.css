@@ -1,0 +1,48 @@
+.question{
+  border-bottom: 2px solid #e3cb98;
+}
+
+.question-item {
+  border-bottom: 1px solid #e2d6bd;
+  display: flex;
+}
+
+.icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 1px solid #ded0f5;
+  padding: 2px;
+  margin: 10px;
+}
+
+.text {
+  margin: 10px;
+}
+
+.question-title {
+  color: #3b4b5b;
+}
+
+.question-text {
+  color: grey;
+}
+
+.category, .comment {
+  color: grey;
+  font-size: 12px;
+}
+
+.material-icons.comment-icon {
+  font-size: 12px;
+}
+
+.new {
+  background-color: #f57a0f;
+  color: #ffffff;
+  font-size: 12px;
+}
+
+.subcontents {
+  display: flex;
+}
