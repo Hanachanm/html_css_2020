@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charaset="UTF-8">
+    <meta content='実習用のサンプルコード', name='description'>
+    <link href="./site.css" rel="stylesheet" />
+    <link href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet'>
+    <title>HTML/CSS 研修 2020</title>
+  </head>
+  <body>
+    <div class="content-box"></div>
+    <div class="border-box"></div>
+
+    <h3>レイアウトを組む</h3>
+    <div>
+      <div class="item">Item 1</div>
+      <div class="item">Item 2</div>
+      <div class="item">Item 3</div>
+    </div>
+
+    <h4>float 回り込み対応</h4>
+    <div class="clearfix-container">
+      <div class="clearfix-item item">Item 1</div>
+      <div class="clearfix-item item">Item 2</div>
+      <div class="clearfix-item item">Item 3</div>
+    </div>
+    <div class="clearfix-bottom"></div>
+
+    <h4>テーブル</h4>
+    <div class="table-container">
+      <div class="table-item item">Item 1</div>
+      <div class="table-item item">Item 2</div>
+      <div class="table-item item">Item 3</div>
+      <div class="table-item item">Item 4</div>
+      <div class="table-item item">Item 5</div>
+      <div class="table-item item">Item 6</div>
+      <div class="table-item item">Item 7</div>
+    </div>
+
+    <h4>flex</h4>
+    <div class="flex-container">
+      <div class="item">Item 1</div>
+      <div class="item">Item 2</div>
+      <div class="item">Item 3</div>
+    </div>
+
+    <h4>cssグリッド</h4>
+    <div class="grid-container">
+      <div class="item">Item 1</div>
+      <div class="item">Item 2</div>
+      <div class="item">Item 3</div>
+      <div class="item">Item 4</div>
+      <div class="item">Item 5</div>
+      <div class="item">Item 6</div>
+      <div class="item">Item 7</div>
+    </div>
+
+    <h3>部品を組み合わせて作る</h3>
+    <div class="hotel-container">
+      <div class="hotel-container-item hotel-container-last-item">
+        <div class="information-container">
+          <span class="topic-ribbon">料理が美味しい！</span>
+          <div class="text-container">
+            <a href="#" class="hotel-name">国際みんなのウェディングホテル</a>
+            <div> <span class="material-icons area-icon">room</span><span class="area-text">文京・池袋・練馬・板橋エリア</span></div>
+            <p class="lead-text">都会にいながら森のような庭園、チャペルや神前式など、様々なスタイルでお二人らしい挙式が可能</p>
+          </div>
+        </div>
+        <div>
+          <img src="./hotel-image.jpg" class="hotel-image">
+        </div>
+      </div>
+    </div>
+
+    <h3>縦並びにしてみる</h3>
+    <div class="hotel-container">
+      <div class="hotel-container-item hotel-container-first-item">
+        <div class="information-container">
+          <span class="topic-ribbon first-topic-ribbon">みんなに選ばれた式場</span>
+          <div class="text-container">
+            <a href="#" class="hotel-name">国際みんなのウェディングホテル</a>
+            <div> <span class="material-icons area-icon">room</span><span class="area-text">文京・池袋・練馬・板橋エリア</span></div>
+            <p class="lead-text">都会にいながら森のような庭園、チャペルや神前式など、様々なスタイルでお二人らしい挙式が可能</p>
+          </div>
+        </div>
+        <div>
+          <img src="./hotel-image.jpg" class="hotel-image">
+        </div>
+      </div>
+      <div class="hotel-container-item">
+        <div class="information-container">
+          <span class="topic-ribbon">料理が美味しい！</span>
+          <div class="text-container">
+            <a href="#" class="hotel-name">国際みんなのウェディングホテル</a>
+            <div> <span class="material-icons area-icon">room</span><span class="area-text">文京・池袋・練馬・板橋エリア</span></div>
+            <p class="lead-text">都会にいながら森のような庭園、チャペルや神前式など、様々なスタイルでお二人らしい挙式が可能</p>
+          </div>
+        </div>
+        <div>
+          <img src="./hotel-image.jpg" class="hotel-image">
+        </div>
+      </div>
+      <div class="hotel-container-item">
+        <div class="information-container">
+          <span class="topic-ribbon">料理が美味しい！</span>
+          <div class="text-container">
+            <a href="#" class="hotel-name">国際みんなのウェディングホテル</a>
+            <div> <span class="material-icons area-icon">room</span><span class="area-text">文京・池袋・練馬・板橋エリア</span></div>
+            <p class="lead-text">都会にいながら森のような庭園、チャペルや神前式など、様々なスタイルでお二人らしい挙式が可能</p>
+          </div>
+        </div>
+        <div>
+<!--          <img src="./hotel-image.jpg" class="hotel-image">-->
+        </div>
+      </div>
+      <div class="hotel-container-item hotel-container-last-item">
+        <div class="information-container">
+          <span class="topic-ribbon">料理が美味しい！</span>
+          <div class="text-container">
+            <a href="#" class="hotel-name">国際みんなのウェディングホテル</a>
+            <div> <span class="material-icons area-icon">room</span><span class="area-text">文京・池袋・練馬・板橋エリア</span></div>
+<!--            <p class="lead-text">都会にいながら森のような庭園、チャペルや神前式など、様々なスタイルでお二人らしい挙式が可能</p>-->
+          </div>
+        </div>
+        <div>
+          <img src="./hotel-image.jpg" class="hotel-image">
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
