@@ -1,0 +1,8 @@
+p {color: red;}
+p {color: blue;}
+
+#id {color:red;}
+.class {color:blue;}
+.class.class2.div{color:green;}
+div {color: yellow;}
+div.class { color:black;}

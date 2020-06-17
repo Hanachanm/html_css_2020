@@ -1,0 +1,262 @@
+.main-title {
+  color: #2fc3a7;
+  font-weight: bold;
+  border-bottom: 1px solid #d4c29d;
+}
+
+.sub-title {
+  color: #2fc3a7;
+  font-weight: bold;
+}
+
+.lead-text {
+  color: #3b4b5b;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.advertisement-badge {
+  background-color: #f28eaf;
+  padding: 5px;
+}
+
+.new-arrival-badge {
+  background-color: #fada7a;
+  padding: 5px;
+}
+
+.image {
+  border-radius: 4px;
+  width: 100px;
+}
+.image-icon {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+.material-icons.fingerprint-icon {
+  color: red;
+  font-size: 100px;
+}
+
+.triangle {
+  border-top: 30px solid #f28eaf;
+  border-bottom: 30px solid #2fc3a7;
+  border-right: 30px solid transparent;
+  border-left: 30px solid transparent;
+  width: 0;
+  height: 0;
+}
+
+.ribbon {
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
+  background-color: #2fc3a7;
+  color: #ffffff;
+  padding: 5px 10px;
+  height: 20px;
+  font-size: 10px;
+}
+
+.ribbon::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -10px;
+  border-top: 10px solid #2fc3a7;
+  border-bottom: 10px solid #2fc3a7;
+  border-right: 10px solid transparent;
+  border-left: 10px solid transparent;
+  width: 0;
+  height: 0;
+}
+
+.number {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #2fc3a7;
+  color: #ffffff;
+  line-height: 50px;
+  text-align: center;
+}
+
+.plus {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid #2fc3a7;
+  line-height: 50px;
+  text-align: center;
+}
+
+.plus:hover {
+  background-color: lightpink;
+  color: #ffffff;
+}
+
+.card {
+  width: 400px;
+  height: 400px;
+  border: 1px solid #d4c29d;
+  border-radius: 10px;
+}
+
+.button {
+  width: 100px;
+  height: 30px;
+  padding: 5px 20px;
+  background-color: #2fc3a7;
+  border: 1px solid #d4c29d;
+  color: #ffffff;
+  border-radius: 4px;
+  text-align: center;
+  line-height: 30px;
+}
+
+.favorite-icon {
+  font-size: 15px;
+ line-height: 1.7;
+vertical-align: middle;
+}
+
+.search-form {
+  border: 1px solid #d4c29d;
+  width: 400px;
+  height: 40px;
+  border-radius: 4px;
+}
+
+.search-icon {
+  color: gray;
+  font-size: 20px;
+  line-height: 2;
+  vertical-align: middle;
+}
+
+.search-text-area {
+  vertical-align: middle;
+  border: none;
+  height: 32px;
+  width: 300px;
+}
+
+.link {
+  text-decoration: none;
+  color: gray;
+  display: block;
+  width: 200px;
+  position: relative;
+}
+
+.link::after {
+  position: absolute;
+  right: 0;
+  content: ">";
+  font-weight: bold;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.breadcrumb-item {
+  display: inline;
+  color: #f28eaf;
+}
+
+.breadcrumb-item-link {
+  color: #f28eaf;
+}
+
+.breadcrumb-item::after {
+  content: ">";
+}
+
+.breadcrumb-item:last-child::after {
+  content: "";
+}
+
+.item {
+  display: inline-block;
+  width: 200px;
+  height: 250px;
+  border: 1px solid #d4c29d;
+  border-radius: 4px 4px;
+  text-decoration: none;
+  color: #3b4b5b;
+  box-shadow: 3px 3px 3px gray;
+  transition: 250ms;
+}
+
+.item:hover{
+  box-shadow: 7px 7px 5px gray;
+}
+
+.item-image {
+  width: 200px;
+  border-radius: 4px 4px 0 0;
+}
+
+.item-info {
+  margin: 0 2px 0;
+}
+
+.item-text {
+  margin: 0 2px 0;
+  font-size: 10px;
+}
+
+.fish {
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+
+  background-color: #2fc3a7;
+
+  color: #ffffff;
+  vertical-align: middle;
+
+  height: 60px;
+
+  padding: 0 30px 0 80px;
+  margin-left: 30px;
+}
+
+.fish::after {
+  content: '';
+  position: absolute;
+
+  border-top: 30px solid #ffffff;
+  border-bottom: 30px solid #ffffff;
+  border-left: 30px solid transparent;
+  border-right: 30px solid #ffffff;
+  width: 0;
+  height: 0;
+  right: -30px;
+
+  border-style: solid;
+}
+.fish::before {
+  content: '';
+  position: absolute;
+
+  border-top: 30px solid transparent;
+  border-bottom: 30px solid transparent;
+  border-left: 30px solid #2fc3a7;
+  border-right: 30px solid transparent;
+  width: 0;
+  height: 0;
+  left: -30px;
+
+  border-style: solid;
+}
+
+.uroko {
+  display:inline;
+  font-size: 30px;
+}
