@@ -19,7 +19,7 @@
 }
 .question-status {
     position: relative;
-    bottom: -100px;
+    bottom: -95px;
     display: flex;
 }
 .question-category {
