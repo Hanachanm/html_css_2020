@@ -6,20 +6,25 @@
     display: flex;
     border-bottom: solid 1px burlywood;
 }
+.question-title-text-position {
+    margin-top: 10px;
+
+}
 .question-post {
+    display: flex;
+    flex-direction: column;
     width: 100%;
+    justify-content: space-between;
 }
 .question-title {
+    margin-bottom: 10px;
 }
 .question-opacity {
     opacity: 0.5;
 }
 .question-text {
-    position: absolute;
 }
 .question-status {
-    position: relative;
-    bottom: -95px;
     display: flex;
 }
 .question-category {
