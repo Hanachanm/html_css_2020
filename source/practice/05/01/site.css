@@ -97,11 +97,13 @@
   /*box-sizing: border-box;*/
   /*width: 500px;*/
   /*overflow-wrap: break-word;*/
+  word-break: break-all;
 }
 
 .question-title.bold {
   color: black;
   font-weight: bold;
+  word-break: break-all;
   /*width: 500px;*/
   /*overflow-wrap: break-word;*/
 }
