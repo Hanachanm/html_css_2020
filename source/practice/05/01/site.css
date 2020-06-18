@@ -1,5 +1,9 @@
 .question{
   border-bottom: 2px solid #e3cb98;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
 }
 
 .question-item {
@@ -18,31 +22,93 @@
 
 .text {
   margin: 10px;
+  flex-grow: 2;
 }
 
 .question-title {
   color: #3b4b5b;
+  margin-bottom: 5px;
 }
 
 .question-text {
   color: grey;
 }
 
-.category, .comment {
+.subcontents {
+  display: flex;
+  position: relative;
+  align-items: flex-end;
+  margin-top: 15px;
+}
+
+
+.category {
+  color: grey;
+  font-size: 12px;
+  margin-right: 5px;
+}
+
+.comment-count {
   color: grey;
   font-size: 12px;
 }
 
 .material-icons.comment-icon {
+  color: grey;
   font-size: 12px;
+  line-height: 1.5;
 }
 
 .new {
   background-color: #f57a0f;
   color: #ffffff;
   font-size: 12px;
+  position: absolute;
+  right: 0;
+  padding: 5px 8px;
 }
 
-.subcontents {
+/*課題２*/
+
+.question-container {
   display: flex;
+  /*width: 100%;*/
+}
+.question-image {
+  width: 100%;
+}
+
+.user-information {
+  display: flex;
+}
+
+.column-question-item {
+  display: flex;
+  flex-direction: column;
+  padding: 0 10px;
+  width: calc( 100% / 3);
+  /*height: 1000px;*/
+  /*position: relative;*/
+  /*flex: 1;*/
+  margin-left: 10px;
+}
+
+.question-text.flex-text {
+  /*box-sizing: border-box;*/
+  /*width: 500px;*/
+  /*overflow-wrap: break-word;*/
+}
+
+.question-title.bold {
+  color: black;
+  font-weight: bold;
+  /*width: 500px;*/
+  /*overflow-wrap: break-word;*/
+}
+
+.user-information {
+  /*position: absolute;*/
+  /*bottom: 0;*/
+  /*right: 0;*/
+  margin: auto 10px 10px auto;
 }
