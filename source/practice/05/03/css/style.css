@@ -124,13 +124,15 @@
 .gdid-container {
   display: grid;
   gap: 5px;
-  grid-template-columns: 1fr 1fr 1fr; 
-  grid-template-rows: 1fr 1fr 1fr 1fr auto; 
+  grid-template-columns: 15vw 15vw 15vw ; 
+  grid-template-rows: 15vw 15vw 15vw 15vw auto; 
   width: 70%;
 }
 
 .grid-img {
   width: 100%;
+  height: 80%;
+  object-fit: cover;
 }
 
 .grid-text {
@@ -141,4 +143,13 @@
 .box-big {
   grid-column: 1 / 3;
   grid-row: 1 / 3;
+  /* margin-bottom: 0; */
+}
+
+.long-row {
+  grid-row: 3 / 5;
+}
+
+.long-column {
+  grid-column: 2 / 4;
 }
