@@ -15,8 +15,11 @@
     opacity: 0.5;
 }
 .question-text {
+    position: absolute;
 }
 .question-status {
+    position: relative;
+    bottom: -100px;
     display: flex;
 }
 .question-category {
