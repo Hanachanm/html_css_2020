@@ -7,7 +7,9 @@
     border-bottom: solid 1px burlywood;
 }
 .question-post {
-    position: relative;
+    width: 100%;
+}
+.question-title {
 }
 .question-opacity {
     opacity: 0.5;
@@ -15,13 +17,17 @@
 .question-text {
 }
 .question-status {
-    position: absolute;
-    bottom: 0;
     display: flex;
 }
 .question-category {
-    position: relative;
+    flex-grow: 0;
 }
 .comment-number {
-
+    flex-grow: 3;
+}
+.post-times {
+    background-color: #ff952b;
+    color: #ffffff;
+    padding: 3px;
+    flex-grow: 0;
 }
