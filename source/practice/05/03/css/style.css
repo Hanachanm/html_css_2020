@@ -5,22 +5,18 @@
 
 .flex-container{
   display: flex;
-  /* width: 100%; */
   justify-content: space-around ;
-  /* align-content: space-between; */
   border-bottom: 1px solid #d4c29d;
+  margin-top: 10px;
 }
 
-.flex-item1 {
+.contents {
+  flex: auto;
+  margin-left: 5px;
 }
 
-.flex-item2 {
-  flex-basis: 80%;
-}
-
-.flex-item3 {
+.flex-sub-information {
   display: flex;
-  /* align-content: space-between; */
   justify-content: space-between;
   margin-bottom: 5px;
 }
