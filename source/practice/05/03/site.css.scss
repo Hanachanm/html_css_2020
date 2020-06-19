@@ -2,33 +2,34 @@
     /*display: flex;*/
     border-top: solid 4px burlywood;
 }
-.question-container {
+
+.question {
     display: flex;
     border-bottom: solid 1px burlywood;
-}
-.question-title-text-position {
-    margin-top: 10px;
+  &__title-text-position {
+      margin-top: 10px;
 
-}
-.question-post {
+  }
+&__post {
     display: flex;
     flex-direction: column;
     width: 100%;
     justify-content: space-between;
 }
-.question-title {
+&__title {
     margin-bottom: 10px;
 }
 .question-opacity {
     opacity: 0.5;
 }
-.question-text {
+&__text {
 }
-.question-status {
+&__status {
     display: flex;
 }
-.question-category {
+&__category {
     flex-grow: 0;
+}
 }
 .comment-number {
     flex-grow: 3;
