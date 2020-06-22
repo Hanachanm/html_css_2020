@@ -1,0 +1,141 @@
+.articles {
+  border: 1.5px solid #d4c29d;
+  border-radius: 10px;
+  width: 600px;
+}
+
+.article {
+  display: flex;
+  padding: 10px;
+  border-bottom: 1.5px solid #d4c29d;
+  justify-content: space-between;
+  .article_topic {
+    background-color: rgba(255,153,51,0.2);
+    border-radius: 10px 10px 0 0;
+  }
+  .article__explanation {
+    padding: 0px 10px 0px 0px;
+  }
+  .article__place-name {
+    font-size: 25px;
+    font-weight: bold;
+    color: #2fc3a7;
+  }
+  .article__text {
+    color: #536a80;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+  &:last-child {
+    border-bottom: none;
+ }
+}
+
+.ribbon {
+  position: relative;
+  box-sizing: border-box;
+  color: #ffffff;
+  padding: 5px 10px;
+  height: 30px;
+  background-color: #2fc3a7;
+  font-size: 12px;
+  margin: 0 10px 0 -10px;
+  width: 150px;
+  &::after {
+    position: absolute;
+    content: "";
+    border-top: 15px solid #2fc3a7;
+    border-bottom: 15px solid #2fc3a7;
+    border-right: 15px solid transparent;
+    border-left: 15px solid transparent;
+    right: -15px;
+    top: 0;
+    width: 0;
+    height: 0;
+  }
+  &_topic {
+    background-color: #ff9933;
+  }
+  &_topic:after {
+    border-top: 15px solid #ff9933;
+    border-bottom: 15px solid #ff9933;
+  }
+}
+
+.location {
+  font-size: 0px;
+  .location__name {
+    font-size: 15px;
+    color: #536a80;
+  }
+  .location__material-icons {
+    font-size: 15px;
+    color: #536a80;
+    line-height: 1.8;
+  }
+}
+
+.image {
+  height: 120px;
+}
+
+// 課題5①
+
+.QandAs {
+  display: flex;
+  flex-direction: column;
+}
+
+.QandA {
+  border-bottom: 1px solid #d4c29d;
+  padding: 10px 10px;
+  &_first {
+    border-top: 2px solid #d4c29d;
+  }
+  &__article {
+    display: flex;
+    color: #8198ae;
+    font-size: 12px;
+  }
+  &__text {
+    margin-left: 10px;
+  }
+  &__title {
+    font-size: 14px;
+    margin: 10px 0;
+    color: #3b4b5b;
+  }
+  &__content {
+    margin: 0;
+  }
+  &__icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 3px solid rgba(212,194,157,0.4);
+    margin-top: 16px;
+  }
+}
+
+.QandA-sub-info {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0 10px 10px;
+  line-height: 30px;
+  &__tag {
+    display: inline-block;
+    margin-right: 5px;
+  }
+  &__new-tag {
+    color: #ffffff;
+    background-color: #ff952b;
+    font-size: 12px;
+    padding: 0 5px;
+  }
+}
+
+.comment {
+  &__icon {
+    font-size: 12px;
+  }
+}
