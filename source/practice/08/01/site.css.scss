@@ -1,0 +1,169 @@
+@mixin screen($screen) {
+  @if ($screen == pc) {
+    @media(min-width: 960px) {
+      @content;
+    }
+  } @else if ($screen == tablet) {
+    @media(max-width: 960px) {
+      @content;
+    }
+  } @else if ($screen == smartphone) {
+    @media(max-width: 560px) {
+      @content;
+    }
+  }
+}
+
+.first{
+  background-color: green;
+
+  .first__item {
+    font-size: 32px;
+    margin-top: 20px;
+  }
+}
+
+.contents {
+  display: flex;
+  justify-content: space-between;
+
+  .contents__content {
+    background-color: #ffedf1;
+    font-size: 3rem;
+  }
+}
+
+  @include screen(smartphone) {
+    .first {
+    background-color: red;
+
+    .first__item {
+      font-size: 16px;
+      margin-top: 10px;
+    }
+  }
+
+  .contents {
+    display: flex;
+    flex-direction: column;
+
+    .contents__content {
+      background-color: #e1f9f5;
+      font-size: 1.6rem;
+    }
+  }
+}
+
+.buttons {
+  display: flex;
+
+  .buttons__item {
+    display: inline-block;
+    color: #dee4ea;
+    background-color: #f7f8fa;
+    border: #b0becc 1px solid;
+    border-radius: 8px;
+    font-weight: bold;
+    padding: 10px 20px;
+    text-align: center;
+    margin-right: 20px;
+    font-size: 15px;
+
+    @include screen(smartphone) {
+      margin: 5px 0;
+    }
+    &.-submit {
+      background-color: #2fc3a7;
+      color: #ffffff;
+      border: #8ae3d2 1px solid;
+    }
+  }
+
+  @include screen(smartphone) {
+    flex-direction: column;
+  }
+}
+
+@include screen(tablet) {
+  .menu {
+    background-color: blue;
+  }
+}
+
+.header_container {
+  display: flex;
+  border-bottom: 1px solid black;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+
+  .header_container__logo {
+  width: 250px;
+  }
+
+  @include screen(smartphone) {
+    .header_container__logo {
+      width: 200px;
+    }
+  }
+}
+
+.header-link {
+  display: flex;
+
+  .header-link__item {
+    margin-left: 10px;
+  }
+
+  .header-link__text {
+      font-size: 16px;
+    }
+
+  .header-link__icon {
+    font-size: 40px;
+    vertical-align: middle;
+  }
+
+  @include screen(tablet) {
+    .header-link__item {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+
+    .header-link__text {
+      font-size: 10px;
+    }
+  }
+
+  @include screen(smartphone) {
+    .header-link__text {
+      display: none;
+    }
+
+    .header-link__icon {
+      font-size: 30px;
+    }
+  }
+}
+
+.images {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 300px 300px 300px;
+  margin: 10px auto;
+  width: 940px;
+
+  .images__item {
+    width: 300px;
+  }
+
+  @include screen(tablet) {
+    grid-template-columns: 300px 300px;
+    width: 610px;
+  }
+
+  @include screen(smartphone) {
+    grid-template-columns: 300px;
+    width: 300px;
+  }
+}
