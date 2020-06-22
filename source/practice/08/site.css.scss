@@ -1,0 +1,152 @@
+@mixin screen($screen) {
+  @if ($screen == pc)  {
+    @media(min-width: 960px) {
+      @content;
+    }
+  } @else if ($screen == tablet) {
+    @media(max-width: 960px) {
+      @content;
+    }
+  } @else if ($screen == smartphone) {
+    @media(max-width: 560px) {
+      @content;
+    }
+  }
+}
+
+.first {
+  background-color: green;
+
+  .first__item {
+    font-size: 32px;
+    margin-top: 20px;
+  }
+}
+
+@include screen(smartphone) {
+  .first {
+    background-color: red;
+
+    .first__item {
+      font-size: 16px;
+      margin-top: 10px;
+    }
+  }
+}
+
+.second {
+  display: flex;
+  justify-content: space-between;
+
+  .second__item {
+    background-color: purple;
+    font-size: 3rem;
+  }
+}
+
+@include screen(smartphone) {
+  .second {
+    display: flex;
+    flex-direction: column;
+
+    .second__item {
+      background-color: pink;
+      font-size: 1.6rem;
+    }
+  }
+}
+
+.third {
+  display: flex;
+
+  .third__item {
+    display: inline-block;
+    color: #dee4ea;
+    background-color: #f7f8fa;
+    border: #b0becc 1px solid;
+    border-radius: 8px;
+    font-weight: bold;
+    padding: 10px 20px;
+    text-align: center;
+    margin-right: 20px;
+    font-size: 15px;
+
+    @include screen(smartphone) {
+      margin: 5px 0;
+    }
+
+    &-submit {
+      background-color: #2fc3a7;
+      color: #ffffff;
+      border: #8ae3d2 1px solid;
+    }
+  }
+
+  @include screen(smartphone) {
+    flex-direction: column;
+  }
+}
+
+.header {
+  display: flex;
+  border-bottom: 1px #000000 solid;
+  justify-content: space-between;
+
+  .header__image {
+    width: 250px;
+  }
+
+  .header__link {
+    margin-right: 15px;
+    display: flex;
+    &-item {
+      @include screen(tablet) {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+    &-name {
+      font-size: 24px;
+      @include screen(tablet) {
+        text-align: center;
+        order: 2;
+        vertical-align: middle;
+      }
+      @include screen(smartphone) {
+        display: none;
+      }
+    }
+    &-icon.material-icons {
+      font-size: 40px;
+      vertical-align: middle;
+    }
+  }
+}
+
+//画像を横並びにする
+
+.grid__images {
+  width: 100%;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(2, calc(calc(100vw - 40px) / 3));
+  //grid-template-columns: 30vw 30vw 30vw;
+  //grid-template-rows: 30vw 30vw;
+  @include screen(tablet) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, calc(calc(100vw - 30px) / 2));
+  }
+
+  @include screen(smartphone) {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, calc(calc(100vw - 20px) / 1));
+    //gird-template-rows: repeat(6, 1fr);
+  }
+
+  .grid__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}

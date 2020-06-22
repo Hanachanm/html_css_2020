@@ -1,0 +1,47 @@
+!!! 5
+%hrml{lang: "ja"}
+  %head
+    %meta{charset: "UTF-8"}
+    %meta{name: "viewport", content: "width=device-width, initial-scale=1"}
+    -#%link{ rel: 'stylesheet', href: "./site.css" }
+    %link{ href: "https://fonts.googleapis.com/icon?family=Material+Icons", rel: 'stylesheet'}
+    = stylesheet_link_tag 'site'
+  %body
+    %h1 レスポンシブに対応させる
+    %h2 文字サイズと余白を調整する
+    .first
+      .first__item TOP
+      .first__item NEWS
+      .first__item MYPAGE
+
+    .second
+      .second__item コンテンツ1
+      .second__item コンテンツ2
+
+    .third
+      .third__item マイページへ
+      .third__item.third__item-submit 登録する
+
+    %h2 ヘッダー
+    .header
+      %img.header__image{src: "../../../sample/08/01/logo_dvs.png"}
+      .header__link
+        .header__link-item
+          %span.header__link-name HOME
+          %span.material-icons.header__link-icon home
+        .header__link-item
+          %span.header__link-name SEARCH
+          %span.material-icons.header__link-icon search
+        .header__link-item
+          %span.header__link-name MYPAGE
+          %span.material-icons.header__link-icon person
+
+
+    %h2 画像を横並びにする
+    .grid__images
+      %img.grid__image{src: "../05/01/5.JPG"}
+      %img.grid__image{src: "../05/01/7.JPG"}
+      %img.grid__image{src: "../05/01/neko.jpeg"}
+      %img.grid__image{src: "../05/01/neko17.JPG"}
+      %img.grid__image{src: "../05/01/neko7.JPG"}
+      %img.grid__image{src: "../05/01/neko12.JPG"}
