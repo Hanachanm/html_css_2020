@@ -1,0 +1,27 @@
+.navigation-bar {
+  width: 980px;
+  height: 18px;
+  display: flex;
+  margin: 22px auto 10px auto;
+  justify-content: center;
+
+  .navigation-bar__item{
+    display: flex;
+    color: #8198AE;
+    font-weight: bold;
+    align-items: center;
+    width: 92px;
+    height: 16px;
+    margin-right: 48px;
+
+    &-icon {
+      font-size: 16px;
+    }
+
+    &-text {
+      font-family: Roboto;
+      font-size: 16px;
+      margin-left: 5px;
+    }
+  }
+}
