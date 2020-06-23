@@ -4,18 +4,20 @@
     %meta{ charset: "UTF-8" }
     %meta{ name: "viewport", content: "width=device-width, initial-scale=1" }
     %link{ href: 'https://fonts.googleapis.com/icon?family=Material+Icons', rel: 'stylesheet' }
-    %link{ rel: "stylesheet", href: "./css/_reset.css" }
     %link{ rel: "stylesheet", href: "./css/style.css" }
-  %body
 
+  %body
     .header
       .header__flex
-        %img.header-logo{ src: "img/logo.png"}
-        .header-search 例) 式場名など気になるキーワード
+        %h1.header__logo-container
+          %img.header-logo{ src: "img/logo.png", alt: "logo" }
+        .header-search
+          %span.material-icons.header-search__icon search
+          .header-search__text 例) 式場名など気になるキーワード
 
     .navigation-bar
       .navigation-bar__content
-        .navigation-icon 
+        .navigation-icon
         .navigation-text 結婚式場
       
       .navigation-bar__content
