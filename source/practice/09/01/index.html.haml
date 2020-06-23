@@ -12,5 +12,22 @@
         .header__logo
           %img.header__image{ src: './images/logo.png' }
         .header__search
-          %span.material-icons search
+          %span.material-icons.header__icon search
           %input{ type: "text", style: "border:none", placeholder: '例）式場名など気になるキーワード'}
+
+    %nav.nav
+      .nav__container
+        .nav__items
+          .nav__item.material-icons account_balance 結婚式場
+          .nav__item.material-icons filter ニュース
+          .nav__item.material-icons navigation ドレス
+          .nav__item.material-icons headset デスク
+          .nav__item.material-icons group 花コミュ
+
+    %img.top-image{ src: 'https://img2.mwed.jp/second_level/categories_main_pc.jpg', alt: '式場探し' }
+
+    .main
+      .ceremonial-hall
+        %h2.ceremonial-hall__title こだわりの式場を探す
+        %h2.ceremonial-hall__image こだわりの式場を探す
+
