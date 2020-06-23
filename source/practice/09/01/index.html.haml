@@ -7,4 +7,10 @@
     %link{ href: "https://fonts.googleapis.com/icon?family=Material+Icons", rel: 'stylesheet'}
     %title 実習09
   %body
-    %h1 hoge
+    %header.header
+      .header__container
+        .header__logo
+          %img.header__image{ src: './images/logo.png' }
+        .header__search
+          %span.material-icons search
+          %input{ type: "text", style: "border:none", placeholder: '例）式場名など気になるキーワード'}
