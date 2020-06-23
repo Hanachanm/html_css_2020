@@ -1,0 +1,35 @@
+.main {
+  width: 68%;
+  margin: 0 auto;
+
+  .ceremonial-hall {
+    .ceremonial-hall__title {
+      font-size: 22px;
+      border-bottom: #D4C29D 3px double;
+      font-weight: bold;
+    }
+    .ceremonial-hall__text {
+      padding: 20px;
+      font-size: 14px;
+    }
+    .hall {
+      padding: 20px 0;
+      display: flex;
+    }
+    .news {
+      .news__post {
+        padding: 10px;
+        display: flex;
+        .news__textarea {
+          //display: flex;
+          //align-items: flex-end;
+          margin: 20px 10px auto 10px;
+          .news__title {
+            font-size: 15px;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}
