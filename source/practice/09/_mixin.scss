@@ -1,0 +1,11 @@
+@mixin screen($screen) {
+  @if ($screen == px) {
+    @media(min-width: 768px) {
+      @content;
+    }
+  } @else if ($screen == smartphone) {
+    @media(max-width: 768px) {
+      @content;
+    }
+  }
+}
