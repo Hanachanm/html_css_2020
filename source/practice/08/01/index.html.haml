@@ -1,0 +1,52 @@
+!!! 5
+%html{ lang:"ja" }
+  %head
+    %meta{ charset: "UTF-8" }
+    %meta{ name: "viewport", content: 'width=device-width, initial-scale=1' }
+    %link{ href: "https://fonts.googleapis.com/icon?family=Material+Icons", rel: 'stylesheet'}
+
+  %body
+    %h1 レスポンシブ
+
+    %h2 文字サイズと余白を調整する
+    .first
+      .first__item TOP
+      .first__item NEWS
+      .first__item MYPAGE
+
+    .contents
+      .contents__content コンテンツ1
+      .contents__content コンテンツ2
+
+
+    %h2 ボタン
+    .buttons
+      %input.buttons__item{  type: "textarea" }
+      .buttons__item.button__item-submit 登録
+
+    %h2 ヘッダー
+    .header
+      .header__container
+        %img.header__container__log-image{ src: './logo_dvs.png' }
+        .header__container__icons
+          %span
+            .material-icons.header-icon home
+            .header__container__icon__text
+              home
+          %span
+            .material-icons search
+            .header__container__icon__text
+              search
+          %span
+            .material-icons account_circle
+            .header__container__icon__text
+              account
+
+      %h2 画像を縦並びにする
+      .grid-images
+        %img.grid-image__item{ src: './place01.jpg' }
+        %img.grid-image__item{ src: './place01.jpg' }
+        %img.grid-image__item{ src: './place01.jpg' }
+        %img.grid-image__item{ src: './place01.jpg' }
+        %img.grid-image__item{ src: './place01.jpg' }
+        %img.grid-image__item{ src: './place01.jpg' }

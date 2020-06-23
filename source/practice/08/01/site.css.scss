@@ -1,0 +1,163 @@
+@mixin screen($screen) {
+  @if ($screen == pc) {
+    @media(min-width: 960px) {
+      @content;
+    }
+  } @else if ($screen == tablet) {
+    @media(max-width: 960px) {
+      @content;
+    }
+  } @else if ($screen == smartphone) {
+    @media(max-width: 560px) {
+      @content;
+    }
+  }
+}
+
+.first {
+  background-color: green;
+  .first__item {
+    font-size: 32px;
+    margin-top: 20px;
+  }
+}
+
+@include screen (smartphone) {
+  .first {
+    background-color: #ff0000;
+    .first__item {
+      font-size: 16px;
+      margin-top: 10px;
+    }
+  }
+}
+
+.contents {
+  display: flex;
+  justify-content: space-between;
+  .contents__content {
+    background-color: #ffedf1;
+    font-size: 3rem;
+  }
+}
+
+@include screen(tablet) {
+  .contents {
+    display: flex;
+    flex-direction: column;
+    .contents__content {
+      background-color: #e1f9f5;
+      font-size: 1.6rem;
+    }
+  }
+  
+}
+
+.buttons {
+  display: flex;
+
+  .buttons__item {
+    display: inline-block;
+    color: pink;
+    background-color: #ffffff;
+    font-weight: bold;
+    padding: 10px 20px;
+    text-align: center;
+    margin-right: 20px;
+    font-size: 15px;
+
+    @include screen(smartphone) {
+      margin: 5px 0;
+    }
+
+    &.-submit {
+      background-color: #2fc3a7;
+      color: #ffffff;
+      border: #8ae3d2 1px solid;
+    }
+  }
+  @include screen(smartphone) {
+    flex-direction: column;
+  }
+}
+
+.header {
+  border-bottom: 1px solid #222347;
+
+  .header__container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px;
+  }
+
+  .header__log-image {
+    width: 250px;
+
+    @include screen(smartphone) {
+      width: 200px;
+    }
+  }
+}
+.header {
+  .header__container {
+    display: flex;
+    justify-content: space-between;
+
+    .header__container__log-image {
+      width: 800px;
+      @include screen(tablet) {
+        width: 500px;
+      }
+      @include screen(smartphone) {
+        width: 200px;
+      }
+    }
+    .header__container__icons {
+      display: flex;
+      text-align: center;
+      align-items: flex-end;
+
+      .header-icon {
+        font-size: 40px;
+      }
+      .header__container__icon__text {
+        margin: 0 10px;
+        @include screen(tablet) {
+          font-size: 20px;
+          width: 200px;
+        }
+        @include screen(smartphone) {
+          display: none;
+          //margin: 0 2px;
+          //width: 50px;
+          // text-indent: 100%;
+          // white-space: nowrap;
+          // overflow: hidden;
+        }
+      }
+    }
+  }
+}
+
+.grid-images {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: 300px 300px 300px;
+  margin: 0 auto;
+  width: 940px;
+
+  @include screen(tablet) {
+    grid-template-columns: 300px 300px;
+    width: 560px;
+  }
+
+  @include screen(smartphone) {
+    grid-template-columns: 300px;
+    width: 300px;
+  }
+
+  .grid-image__item {
+    width: 300px;
+  }
+}
+

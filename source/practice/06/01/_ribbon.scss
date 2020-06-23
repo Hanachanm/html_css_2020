@@ -1,0 +1,37 @@
+.ribbon {
+  display: inline-block;
+  position: relative;
+  height: 20px;
+  line-height: 20px;
+  vertical-align: middle;
+  padding: 0 10px 0 10px;
+  font-size: 12px;
+  background-color: #2fc3a7;
+  color: #ffffff;
+  box-sizing: border-box;
+  margin-left: -10px;
+  margin-bottom: 10px;
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    top: 0;
+    right: -10px;
+
+    border-style: solid;
+    border-width: 10px;
+    border-color: transparent;
+    border-top-color: #2fc3a7;
+    border-bottom-color: #2fc3a7;
+  }
+  &.m--rank1 {
+    background-color: #ff9933;
+    &:after{
+      border-color: #ff9933;
+      border-right-color: #fff2e6;
+    }
+  }
+}
+

@@ -1,0 +1,32 @@
+.place-lead {
+    font-size: 12px;
+    line-height: 1.2;
+    color: #536a80;
+    margin-bottom: 10px;
+}
+.ribbon {
+    display: inline-block;
+    position: relative;
+    height: 20px;
+    line-height: 20px;
+    vertical-align: middle;
+    padding: 0 10px 0 10px;
+    font-size: 12px;
+    background-color: #2fc3a7;
+    color: #ffffff;
+    box-sizing: border-box;
+}
+.ribbon::after {
+    content: '';
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    top: 0;
+    right: -10px;
+
+    border-style: solid;
+    border-width: 10px;
+    border-color: transparent;
+    border-top-color: #2fc3a7;
+    border-bottom-color: #2fc3a7;
+}
