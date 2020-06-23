@@ -1,0 +1,38 @@
+!!! 5
+%html{ lang: 'ja' }
+  %head
+    %meta{ charset: 'UTF8' }
+    %meta{ name: 'viewport', content: 'device-width, initial-scale=1' }
+    %link{ href: 'https://fonts.googleapis.com/icon?family=Material+Icons', rel: 'stylesheet' }
+    = stylesheet_link_tag 'site.css'
+  %body
+    .header
+      .header-item
+        %img.header-item__logo{ src:'./images/logo.png' }
+        .search-form
+          %span.material-icons.search-form__icon search
+          %input.search-form__textarea{ type: 'textarea', placeholder: '例）式場名など気になるキーワード'}
+
+    %nav.navigation-bar
+      .navigation-bar__item
+        %span.material-icons.header-link__icon account_balance
+        %span.header-link__text 結婚式場
+      .navigation-bar__item
+        %span.material-icons.header-link__icon collections
+        %span.header-link__text ニュース
+      .navigation-bar__item
+        %span.material-icons.header-link__icon navigation
+        %span.header-link__text ドレス
+      .navigation-bar__item
+        %span.material-icons.header-link__icon headset_mic
+        %span.header-link__text デスク
+      .navigation-bar__item
+        %span.material-icons.header-link__icon group
+
+        %span.header-link__text 花コミュ
+    %h1.top
+      %img.top__image{ src:'https://img2.mwed.jp/second_level/categories_main_pc.jpg' }
+    .contents
+      .contents__main
+      .contents__side
+    .footer
