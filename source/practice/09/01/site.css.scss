@@ -1,6 +1,7 @@
 @import 'reset';
 @import 'mixin';
 
+
 // header
 .header {
   margin-top: 20px;
@@ -11,6 +12,7 @@
 .header-item {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 980px;
   margin: 0 auto;
 
@@ -29,24 +31,40 @@
   height: 38px;
   color: #B0BECC;
   .search-form__icon {
+    margin-left: 15px;
     font-size: 24px;
-    // vertical-align: bottom;
   }
+
   .search-form__textarea {
     border: none;
     outline: none;
     font-size: 12px;
     width: 100%;
   }
+  .search-form__textarea::placeholder {
+    color: #B0BECC;
+  }
 }
 
 // navigation-bar
 .navigation-bar {
-  display: flex;
-  justify-content: space-between;
   width: 980px;
   margin: 22px auto 10px;
   color: #8198B6;
+
+  .navigation-bar__items {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 163px;
+  }
+
+  .navigation-bar__text {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .navigation-bar__icon {
+    font-size: 14px;
+  }
 }
 
 //top
@@ -81,6 +99,64 @@
 
 // footer
 .footer {
-  background-color: #D4C29D;
-   height: 310px;
+  background-color: #F9F7F2;
+  height: 310px;
+  color: #3B4B5B;
+}
+
+.footer-contents {
+    display: flex;
+    width: 980px;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+
+.footer-content__top {
+  border-bottom: 1px solid #D4C29D;
+  margin-bottom: 10px;
+}
+
+.footer-content {
+  width: 301px;
+  margin-top: 45px;
+
+  .footer-content__headline {
+    font-size: 22px;
+    margin: 0 0 5px 10px;
+  }
+
+  .footer-content__item {
+    text-decoration: none;
+    color: #3B4B5B;
+    font-size: 12px;
+    line-height: 18px;
+    margin-left: 10px;
+  }
+}
+
+.footer-company {
+  width: 980px;
+  font-size: 14px;
+  margin: 45px auto 10px;
+
+  .footer-company__information {
+    margin-bottom: 10px;
+  }
+
+  .footer-company__content {
+    display: inline;
+    font-size: 12px;
+
+    &::after {
+      content: "|";
+    }
+
+    &:last-child::after {
+      content: "";
+    }
+  }
+  .footer-company__content-link {
+    text-decoration: none;
+    color: #3B4B5B;
+  }
 }

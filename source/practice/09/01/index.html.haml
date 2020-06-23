@@ -3,36 +3,107 @@
   %head
     %meta{ charset: 'UTF8' }
     %meta{ name: 'viewport', content: 'device-width, initial-scale=1' }
-    %link{ href: 'https://fonts.googleapis.com/icon?family=Material+Icons', rel: 'stylesheet' }
+    %link{ href: 'https://fonts.googleapis.com/icon?family=Material+Icons+Outlined', rel: 'stylesheet' }
     = stylesheet_link_tag 'site.css'
   %body
-    .header
+    %header.header
       .header-item
         %img.header-item__logo{ src:'./images/logo.png' }
         .search-form
-          %span.material-icons.search-form__icon search
+          %span.material-icons-outlined.search-form__icon search
           %input.search-form__textarea{ type: 'textarea', placeholder: '例）式場名など気になるキーワード'}
 
     %nav.navigation-bar
-      .navigation-bar__item
-        %span.material-icons.header-link__icon account_balance
-        %span.header-link__text 結婚式場
-      .navigation-bar__item
-        %span.material-icons.header-link__icon collections
-        %span.header-link__text ニュース
-      .navigation-bar__item
-        %span.material-icons.header-link__icon navigation
-        %span.header-link__text ドレス
-      .navigation-bar__item
-        %span.material-icons.header-link__icon headset_mic
-        %span.header-link__text デスク
-      .navigation-bar__item
-        %span.material-icons.header-link__icon group
-
-        %span.header-link__text 花コミュ
+      .navigation-bar__items
+        .navigation-bar__item
+          %span.material-icons-outlined.navigation-bar__icon account_balance
+          %span.navigation-bar__text 結婚式場
+        .navigation-bar__item
+          %span.material-icons-outlined.navigation-bar__icon collections
+          %span.navigation-bar__text ニュース
+        .navigation-bar__item
+          %span.material-icons-outlined.navigation-bar__icon navigation
+          %span.navigation-bar__text ドレス
+        .navigation-bar__item
+          %span.material-icons-outlined.navigation-bar__icon headset_mic
+          %span.navigation-bar__text デスク
+        .navigation-bar__item
+          %span.material-icons-outlined.navigation-bar__icon group
+          %span.navigation-bar__text 花コミュ
     %h1.top
       %img.top__image{ src:'https://img2.mwed.jp/second_level/categories_main_pc.jpg' }
     .contents
       .contents__main
       .contents__side
-    .footer
+
+    %footer.footer
+      .footer-contents
+        .footer-content
+          .footer-content__top
+            %h3.footer-content__headline 結婚式を探す
+          %ul
+            %li
+              %a.footer-content__item{ href:"#" }
+                結婚式を探す
+            %li
+              %a.footer-content__item{ href:"#" }
+                口コミランキングから
+            %li
+              %a.footer-content__item{ href:"#" }
+                こだわりウェディング特集から
+            %li
+              %a.footer-content__item{ href:"#" }
+                海外（ハワイ）から
+            %li
+              %a.footer-content__item{ href:"#" }
+                相談デスク
+            %li
+              %a.footer-content__item{ href:"#" }
+                ブライダルフェアから
+        .footer-content
+          .footer-content__top
+            %h3.footer-content__headline ウェディングアイテムを探す
+          %ul
+            %li
+              %a.footer-content__item{ href:"#" }
+                ウェディングドレスを探す
+            %li
+              %a.footer-content__item{ href:"#" }
+                結婚・婚約指輪を探す
+            %li
+              %a.footer-content__item{ href:"#" }
+                前撮り・フォトウェディングを探す
+            %li
+              %a.footer-content__item{ href:"#" }
+                演出&ウェディングアイテムを探す
+        .footer-content
+          .footer-content__top
+            %h3.footer-content__headline 結婚式について知る
+          %ul
+            %li
+              %a.footer-content__item{ href:"#" }
+                みんなのウェディングニュース
+            %li
+              %a.footer-content__item{ href:"#" }
+                結婚準備マニュアル
+            %li
+              %a.footer-content__item{ href:"#" }
+                相談広場
+            %li
+              %a.footer-content__item{ href:"#" }
+                口コミを見る
+            %li
+              %a.footer-content__item{ href:"#" }
+                費用明細を見る
+      .footer-company
+        %h4.footer-company__information 企業情報
+        %ul
+          %li.footer-company__content
+            %a.footer-company__content-link{ href:"#" }
+              会社概要
+          %li.footer-company__content
+            %a.footer-company__content-link{ href:"#" }
+              プライバシーポリシー
+          %li.footer-company__content
+            %a.footer-company__content-link{ href:"#" }
+              式場掲載・広告掲載のご案内
