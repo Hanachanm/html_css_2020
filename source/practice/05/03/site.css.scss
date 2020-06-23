@@ -1,0 +1,46 @@
+.container{
+    /*display: flex;*/
+    border-top: solid 4px burlywood;
+}
+
+.question {
+    display: flex;
+    border-bottom: solid 1px burlywood;
+  &__title-text-position {
+      margin-top: 10px;
+  }
+  &__post {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      justify-content: space-between;
+  }
+  &__title {
+      margin-bottom: 10px;
+  }
+  &__text {
+    &.question_opacity {
+      opacity: 0.5;
+    }
+  }
+  &__status {
+      display: flex;
+    &.question_opacity {
+      opacity: 0.5;
+    }
+  }
+  &__category {
+      flex-grow: 0;
+  }
+}
+
+
+.comment-number {
+    flex-grow: 3;
+}
+.post-times {
+    background-color: #ff952b;
+    color: #ffffff;
+    padding: 3px;
+    flex-grow: 0;
+}
