@@ -1,0 +1,49 @@
+!!! 5
+%html{ lang: "ja" }
+  %head
+    %meta{ charset: "UTF-8" }
+    %meta{ name: "viewport", content: "width=device-width, initial-scale=1" }
+    %link{ href: 'https://fonts.googleapis.com/icon?family=Material+Icons', rel: 'stylesheet' }
+    %link{ rel: "stylesheet", href: "./css/style.css" }
+  %body
+    %h1 レスポンシブ
+
+    %h2 文字サイズと余白を調整する
+    .first
+      .first__item TOP
+      .first__item NEWS
+      .first__item MYPAGE
+
+    .contents
+      .contents__content　コンテンツ1
+      .contents__content　コンテンツ2
+
+    %h2 ボタン
+    .buttons
+      .buttons__item マイページへ
+      .buttons__item.buttons__item_submit 登録する
+
+    %br
+    
+    %h2 ヘッダー
+    .headers
+      %img.headers__logo{ src: "./img/logo.png" }
+      .headers__contents
+        .headers-link
+          %p.headers-link__text HOME
+          %span.material-icons.headers-link__icon home
+        .headers-link
+          %p.headers-link__text SEARCH
+          %span.material-icons.headers-link__icon search
+        .headers-link
+          %p.headers-link__text MYPAGE
+          %span.material-icons.headers-link__icon account_box
+
+    %h2 画像を縦並びにする
+    .grid
+      %img.grid__images{ src: "./img/bob.png" }
+      %img.grid__images{ src: "./img/bob.png" }
+      %img.grid__images{ src: "./img/bob.png" }
+      %img.grid__images{ src: "./img/bob.png" }
+      %img.grid__images{ src: "./img/bob.png" }
+      %img.grid__images{ src: "./img/bob.png" }

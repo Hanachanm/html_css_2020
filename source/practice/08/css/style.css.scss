@@ -1,0 +1,172 @@
+@mixin screen($screen) {
+  @if ($screen == pc) {
+    @media(min-width: 960px) {
+      @content;
+    }
+  } @else if ($screen == tablet) {
+    @media(max-width: 960px) {
+      @content;
+    }
+  } @else if ($screen == smartphone) {
+    @media(max-width: 560px) {
+      @content;
+    }
+  }
+}
+
+.first {
+  background-color: green;
+
+  .first__item {
+    font-size: 32px;
+    margin-top: 20px;
+  }
+}
+
+.contents {
+  display: flex;
+  justify-content: space-between;
+
+  .contents__content {
+    background-color: #ffedf1;
+    font-size: 3rem;
+  }
+}
+
+// @media screen and (max-width: 600px) {
+  @include screen(smartphone) {
+  .contents {
+    display: flex;
+    justify-content: column;
+
+    .contents__content {
+      background-color: #e1f9f5;
+      font-size: 1.6rem;
+    }
+  }
+
+  .first {
+    background-color: red;
+
+    .first__item {
+      font-size: 16px;
+      margin-top: 10px;
+    }
+  }
+}
+
+//　登録ボタン 
+.buttons {
+  display: flex;
+
+  .buttons__item {
+    display: inline-block;
+    color: #dee4ea;
+    background-color: #f7f8fa;
+    border: #b0becc 1px solid;
+    border-radius: 8px;
+    font-weight: bold;
+    padding: 10px 20px;
+    text-align: center;
+    margin-right: 20px;
+    font-size: 15px;
+
+    @include screen(smartphone) {
+      margin: 5px 0;
+    }
+
+    &_submit {
+      background-color: #2fc3a7;
+      color: #ffffff;
+      border: #8ae3d2 1px solid;
+    }
+  }
+
+  @include screen(smartphone) {
+    flex-direction: column;
+  }
+}
+
+
+//　ヘッダー
+.headers {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #3b4b5b;
+  padding : 10px;
+
+  &__logo {
+    width: 200px;
+    height: 40px;
+    margin-top: 20px;
+  }
+
+  @include screen(pc) {
+    &__contents {
+      display: flex;  
+      vertical-align: middle;
+    }
+  }
+  @include screen(tablet) {
+    &__contents {
+      display: flex;  
+      vertical-align: middle;
+    }
+  }
+}
+
+.headers-link {
+  text-align: center;
+  margin-right: 10px;
+  margin-top: 10px;
+
+  @include screen(pc) {
+    display: flex;
+  }
+
+  @include screen(tablet) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  &__icon {
+    font-size: 40px;
+    margin-top: 5px;
+  }
+  &__text {
+    @include screen(tablet) {
+      margin-top: -5px;
+    }
+    @include screen(smartphone) {
+      display: none;
+    }
+  }
+}
+
+// 画像
+.grid {
+  display: grid;
+  gap: 10px;
+  padding-right: auto;
+  padding-left: auto;
+
+  @include screen(pc) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  @include screen(tablet) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @include screen(smartphone) {
+    grid-template-columns: 1fr;
+  }
+
+  &__images {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}

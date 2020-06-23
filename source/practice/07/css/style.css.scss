@@ -1,0 +1,153 @@
+.chapel-block {
+  border: 2px solid #d4c29d;
+  width: 500px;
+  margin-bottom: -2px;
+
+  &.chapel-block_first {
+    background-color: #FFF0F0;
+    border-radius: 8px 8px 0 0 ;
+  }
+
+  &.chapel-block_last {
+    border-radius: 0 0 8px 8px;
+  }
+
+  &.flex {
+    display: flex;
+  }
+}
+
+.chapel-block__point-element {
+  position: relative;
+  background-color: #2fc3a7;
+  color: #FFFFFF;
+
+  width: 170px;
+  height: 25px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align:  center;
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -12.5px;
+    border-top: 12.5px solid #2fc3a7;
+    border-bottom: 12.5px solid  #2fc3a7;
+    border-right: 12.5px solid transparent;
+    border-left: 12.5px solid transparent;
+    width: 0px;
+    height: 0px;
+  }
+
+  &.point_first {
+    background-color: #ff9933;
+  }
+
+  &.point_first:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -12.5px;
+    border-top: 12.5px solid #ff9933;
+    border-bottom: 12.5px solid  #ff9933;
+    border-right: 12.5px solid transparent;
+    border-left: 12.5px solid transparent;
+    width: 0px;
+    height: 0px;
+  }
+}
+
+.chapel-block__chapel-name-element {
+  color: #2fc3a7;
+  margin-left: 10px;
+}
+
+.chapel-block__icon-element {
+  vertical-align: middle;
+  font-size: 10px;
+  margin-left: 10px;
+  // margin-right: -5px;
+}
+
+.chapel-block__area-element {
+  color: #3b4b5b;
+  margin-left: 0;
+  // margin-top: -3px;
+  font-size: 10px;
+}
+
+.chapel-block__text-element {
+  color: #3b4b5b;
+  margin-left: 10px;
+  margin-top: 5px;
+  font-size: 10px;
+}
+
+.chapel-block__img-element {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+}
+
+// 課題1　Q&A
+.QandA-block {
+  display: flex;
+  justify-content: space-around ;
+  border-bottom: 1px solid #d4c29d;
+  margin-top: 10px;
+}
+
+.QandA-block__contents-element {
+  flex: auto;
+  margin-left: 5px;
+}
+
+.QandA-block__icon-element {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+%content {
+  text-align: left;
+  color: #3b4b5b;
+  flex-grow: 3;
+}
+.flex-post-title {
+  margin: 0;
+  font-size: 20px;
+  @extend %content;
+}
+
+.flex-post-text {
+  font-size: 10px;
+  @extend %content;
+}
+
+.information-block {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+
+.information-block__language-element {
+  font-size: 10px;
+  text-align: left;
+}
+
+.icon {
+  font-size: 10px;
+  margin-left: 10px;
+}
+
+.information-block__new-element {
+  background-color: coral;
+  color: #ffffff;
+  padding: 5px;
+  font-size: 10px;
+  margin-bottom: auto;
+}
