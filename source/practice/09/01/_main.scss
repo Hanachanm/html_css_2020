@@ -42,6 +42,7 @@
 }
 
 .ranking {
+  width: 34%;
   .ranking__title {
     margin: 40px 0 0 0;
     font-size: 22px;
@@ -57,5 +58,26 @@
   }
   .ranking__place-name {
     font-size: 14px;
+  }
+  .ranking__place-score {
+    padding: 15px 0;
+  }
+  .ranking__place-headline {
+    font-size: 12px;
+  }
+}
+.search-area {
+  .search-area__title {
+    margin: 50px 0 0 0;
+    font-size: 22px;
+    border-bottom: #D4C29D 1px solid;
+    font-weight: bold;
+  }
+  .search-area__list {
+  }
+  .search-area__name {
+    font-size: 14px;
+    padding: 15px;
+    border-bottom: #D4C29D 1px solid;
   }
 }

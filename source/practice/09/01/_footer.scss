@@ -1,0 +1,12 @@
+.footer {
+  border: #3b4b5b 1px solid;
+}
+.site-map {
+  .site-map__list {
+    list-style-type: none;
+    display: flex;
+  }
+  .site-map__item {
+    display: block
+  }
+}
