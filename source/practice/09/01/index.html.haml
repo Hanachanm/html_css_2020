@@ -37,7 +37,7 @@
       .contents__main
         .place-styles
           .contents__top_main
-            %h2.contents__headline こだわりから式場を探す
+            %h2.contents__headline_main こだわりから式場を探す
           %h3.contents__sentence 会場ジャンルやこだわりから式場を探そう。
           .place-styles__contents
             .place-styles__content
@@ -62,7 +62,7 @@
 
         .news
           .contents__top_main
-            %h2.contents__headline ニュースを読んで式場を探す
+            %h2.contents__headline_main ニュースを読んで式場を探す
           %h3.contents__sentence 結婚式の種類や式場のまとめ記事を読んで、好きな式場を見つけよう。
           .news__contents
             .news__content
@@ -90,17 +90,81 @@
               .news__text
                 %h3.news__text_headline ＼式場に聞いてみたシリーズ／式場のカップルや結婚式に対して考えていること
                 .news__text_days 2020年5月26日
-          %a.more-link{ href: "#"} もっと見る
-
-
+          %a.more-link{ href: "#" } もっと見る
 
       .contents__side
         .ranking
-          .contents__top_side
-            %h2.contents__headline 東京都の式場ランキング
+          .contents__top_ranking
+            %h2.contents__headline_side 東京都の式場ランキング
+          .ranking_contents
+            %a.ranking__content{ href: "#" }
+              %img.ranking__image{ src: './images/place01.jpg' }
+              .ranking__text
+                .ranking__text_headline 国際みんなのウェディングホテル
+                .ranking__text_evaluation ★★★★★ 4.51
+                .ranking__text_explain 都会にいながら森のような庭園
+            %a.ranking__content{ href: "#" }
+              %img.ranking__image{ src: './images/place02.jpg' }
+              .ranking__text
+                .ranking__text_headline 国際みんなのウェディングホテル
+                .ranking__text_evaluation ★★★★★ 4.51
+                .ranking__text_explain 都会にいながら森のような庭園
+            %a.ranking__content{ href: "#" }
+              %img.ranking__image{ src: './images/place03.jpg' }
+              .ranking__text
+                .ranking__text_headline 国際みんなのウェディングホテル
+                .ranking__text_evaluation ★★★★★ 4.51
+                .ranking__text_explain 都会にいながら森のような庭園
+            %a.ranking__content{ href: "#" }
+              %img.ranking__image{ src: './images/place04.jpg' }
+              .ranking__text
+                .ranking__text_headline 国際みんなのウェディングホテル
+                .ranking__text_evaluation ★★★★★ 4.51
+                .ranking__text_explain 都会にいながら森のような庭園
+            %a.ranking__content{ href: "#" }
+              %img.ranking__image{ src: './images/place05.jpg' }
+              .ranking__text
+                .ranking__text_headline 国際みんなのウェディングホテル
+                .ranking__text_evaluation ★★★★★ 4.51
+                .ranking__text_explain 都会にいながら森のような庭園
+          %a.more-link{ href: "#"} もっと見る
+
         .prefectures
-          .contents__top_side
-            %h2.contents__headline エリアから探す
+          .contents__top_prefectures
+            %h2.contents__headline_side エリアから探す
+          %ul
+            %li
+              %a.prefectures__area{ href:"#" }
+                %h3 北海道
+                %h3.prefectures__sign >
+            %li
+              %a.prefectures__area{ href:"#" }
+                %h3 東北
+                %h3.prefectures__sign +
+            %li
+              %a.prefectures__area{ href:"#" }
+                %h3 首都圏
+                %h3.prefectures__sign +
+            %li
+              %a.prefectures__area{ href:"#" }
+                %h3 北信越
+                %h3.prefectures__sign +
+            %li
+              %a.prefectures__area{ href:"#" }
+                %h3 東海
+                %h3.prefectures__sign +
+            %li
+              %a.prefectures__area{ href:"#" }
+                %h3 関西
+                %h3.prefectures__sign +
+            %li
+              %a.prefectures__area{ href:"#" }
+                %h3 中国・四国
+                %h3.prefectures__sign +
+            %li
+              %a.prefectures__area{ href:"#" }
+                %h3 九州・沖縄
+                %h3.prefectures__sign +
 
     %footer.footer
       .footer-contents
