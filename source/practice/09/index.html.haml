@@ -9,7 +9,7 @@
 
   %body
     .header
-      .header__flex
+      .header__container
         %h1.header__logo-container
           %img.header-logo{ src: "img/logo.png", alt: "logo" }
         .header-search
@@ -18,28 +18,28 @@
 
     .navigation-bar
       .navigation-bar__content
-        %span.material-icons-outlined.navigation-bar__conent-icon account_balance
-        .navigation-text 結婚式場
+        %span.material-icons-outlined.navigation-bar__icon account_balance
+        .navigation-bar-text 結婚式場
       
       .navigation-bar__content
-        %span.material-icons-outlined.navigation-bar__conent-icon{ style: "outline" } photo_library
-        .navigation-text ニュース
+        %span.material-icons-outlined.navigation-bar__icon{ style: "outline" } photo_library
+        .navigation-bar-text ニュース
 
       .navigation-bar__content
-        %span.material-icons-outlined.navigation-bar__conent-icon navigation
-        .navigation-text　ドレス
+        %span.material-icons-outlined.navigation-bar__icon navigation
+        .navigation-bar-text　ドレス
 
       .navigation-bar__content
-        %span.material-icons-outlined.navigation-bar__conent-icon headset_mic
-        .navigation-text　デスク
+        %span.material-icons-outlined.navigation-bar__icon headset_mic
+        .navigation-bar-text　デスク
 
       .navigation-bar__content
-        %span.material-icons-outlined.navigation-bar__conent-icon group
-        .navigation-text　花コミュ        
+        %span.material-icons-outlined.navigation-bar__icon group
+        .navigation-bar-text　花コミュ        
 
     %img.top-img{ src: "https://img2.mwed.jp/second_level/categories_main_pc.jpg"}
 
-    .flex
+    .wrapper
       .main
         .main__place-styles 
           %h2 こだわりから式場を探す
@@ -55,15 +55,15 @@
 
     .footer
       .footer__box
-        .footer-flex
-          .footer-flex__content
+        .footer-container
+          .footer-container__content
             %h3 結婚式を探す
-          .footer-flex__content
+          .footer-container__content
             %h3 ウェディングアイテムを探す
-          .footer-flex__content
+          .footer-container__content
             %h3 結婚式について知る
         .footer-company 企業情報
-        .footer-company-flex
+        .footer-company-container
           .footer-company-information　会社概要
           |
           .footer-company-information プライバシーポリシー
