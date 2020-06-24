@@ -4,7 +4,7 @@
     %meta{charset: 'UTF-8'}
     %meta{name: 'description', content: '実習用のサンプルコードです'}
     %meta{name: 'viewport', content: 'width=device-width, initial-scale=1'}
-    %link{href: "https://fonts.googleapis.com/icon?family=Material+Icons+Outlined", rel: 'stylesheet'}
+    %link{href: "https://fonts.googleapis.com/icon?family=Material+Icons", rel: 'stylesheet'}
     = stylesheet_link_tag 'site'
     %title 最終課題
   %body.body
@@ -21,48 +21,160 @@
     %navigation
       %ul.navigation-bar
         %li.navigation-bar__item
-          %span.material-icons-outlined.navigation-bar__item-icon account_balance
+          %span.material-icons.navigation-bar__item-icon account_balance
           %p.navigation-bar__item-text 結婚式場
         %li.navigation-bar__item
-          %span.material-icons-outlined.navigation-bar__item-icon photo_library
+          %span.material-icons.navigation-bar__item-icon photo_library
           %p.navigation-bar__item-text ニュース
         %li.navigation-bar__item
-          %span.material-icons-outlined.navigation-bar__item-icon navigation
+          %span.material-icons.navigation-bar__item-icon navigation
           %p.navigation-bar__item-text  ドレス
         %li.navigation-bar__item
-          %span.material-icons-outlined.navigation-bar__item-icon headset_mic
+          %span.material-icons.navigation-bar__item-icon headset_mic
           %p.navigation-bar__item-text デスク
         %li.navigation-bar__item
-          %span.material-icons-outlined.navigation-bar__item-icon group
+          %span.material-icons.navigation-bar__item-icon group
           %p.navigation-bar__item-text 花コミュ
 
     .top__image
       %img.top__image-item{src: 'https://img2.mwed.jp/second_level/categories_main_pc.jpg'}
 
-    .main-contents
-      .feeling-styles
-        %h2.feeling-styles__title こだわりから式場を探す
-        %p.feeling-styles__text 会場ジャンルやこだわりから式場を探そう。
-        .feeling-styles__container
-          .feeling-styles__container-item
-            %img.feeling-styles__container-image{src: 'https://img2.mwed.jp/c/f=webp:jpeg,ir=auto/smartphone/place_genres/thumbnail/hotelwedding_top.jpg', alt: 'ホテル'}
-            %p.feeling-styles__container-name　ホテル
-          .feeling-styles__container-item
-            %img.feeling-styles__container-image{ src: 'https://img2.mwed.jp/c/f=webp:jpeg,ir=auto/smartphone/place_genres/thumbnail/restaurantwedding_top.jpg', alt: 'レストラン' }
-            %p.feeling-styles__container-name　レストラン
-          .feeling-styles__container-item
-            %img.feeling-styles__container-image{ src: 'https://img2.mwed.jp/c/f=webp:jpeg,ir=auto/smartphone/place_genres/thumbnail/housewedding_top.jpg', alt: 'ゲストハウス'}
-            %p.feeling-styles__container-name ゲストハウス
-          .feeling-styles__container-item
-            %img.feeling-styles__container-image{ src: 'https://img2.mwed.jp/c/f=webp:jpeg,ir=auto/smartphone/place_genres/thumbnail/shrinewedding_top.jpg', alt: '神社・仏閣婚'}
-            %p.feeling-styles__container-name  神社・仏閣婚
-          .feeling-styles__container-item
-            %img.feeling-styles__container-image{ src: 'https://img2.mwed.jp/c/f=webp:jpeg,ir=auto/smartphone/place_genres/thumbnail/church_top.jpg', alt: '教会・チャペル'}
-            %p.feeling-styles__container-name 教会・チャペル
-          .feeling-styles__container-item
-            %img.feeling-styles__container-image{ src: 'https://img2.mwed.jp/c/f=webp:jpeg,ir=auto/smartphone/place_genres/thumbnail/weddinghall_top.jpg', alt: '専門式場'}
-            %p.feeling-styles__container-name 専門式場
-        .feeling-styles__more　もっと見る
+    .contents
+      .main-contents
+        .feeling-styles
+          %h2.feeling-styles__title こだわりから式場を探す
+          %p.feeling-styles__text 会場ジャンルやこだわりから式場を探そう。
+          .feeling-styles__container
+            .feeling-styles__container-item
+              %img.feeling-styles__container-image{src: 'https://img2.mwed.jp/c/f=webp:jpeg,ir=auto/smartphone/place_genres/thumbnail/hotelwedding_top.jpg', alt: 'ホテル'}
+              %p.feeling-styles__container-name　ホテル
+            .feeling-styles__container-item
+              %img.feeling-styles__container-image{ src: 'https://img2.mwed.jp/c/f=webp:jpeg,ir=auto/smartphone/place_genres/thumbnail/restaurantwedding_top.jpg', alt: 'レストラン' }
+              %p.feeling-styles__container-name　レストラン
+            .feeling-styles__container-item
+              %img.feeling-styles__container-image{ src: 'https://img2.mwed.jp/c/f=webp:jpeg,ir=auto/smartphone/place_genres/thumbnail/housewedding_top.jpg', alt: 'ゲストハウス'}
+              %p.feeling-styles__container-name ゲストハウス
+            .feeling-styles__container-item
+              %img.feeling-styles__container-image{ src: 'https://img2.mwed.jp/c/f=webp:jpeg,ir=auto/smartphone/place_genres/thumbnail/shrinewedding_top.jpg', alt: '神社・仏閣婚'}
+              %p.feeling-styles__container-name  神社・仏閣婚
+            .feeling-styles__container-item
+              %img.feeling-styles__container-image{ src: 'https://img2.mwed.jp/c/f=webp:jpeg,ir=auto/smartphone/place_genres/thumbnail/church_top.jpg', alt: '教会・チャペル'}
+              %p.feeling-styles__container-name 教会・チャペル
+            .feeling-styles__container-item
+              %img.feeling-styles__container-image{ src: 'https://img2.mwed.jp/c/f=webp:jpeg,ir=auto/smartphone/place_genres/thumbnail/weddinghall_top.jpg', alt: '専門式場'}
+              %p.feeling-styles__container-name 専門式場
+          .feeling-styles__more
+            %a.feeling-styles__more-link　もっと見る
+
+        .news
+          %h2.news__title ニュースを読んで式場を探す
+          %p.news__text 結婚式の種類や式場のまとめ記事を読んで、好きな式場を見つけよう。
+          .news__item-container
+            .news__item
+              %img.news__item-image{src: '../../sample/09/01/images/place01.jpg', alt: '式場のカップルや結婚式に対して考えていること'}
+              .news__item-information
+                .news__item-text ＼式場に聞いてみたシリーズ／式場のカップルや結婚式に対して考えていること
+                .news__item-date 2020年5月26日
+            .news__item
+              %img.news__item-image{src: '../../sample/09/01/images/place02.jpg', alt: '式場のカップルや結婚式に対して考えていること'}
+              .news__item-information
+                .news__item-text ＼式場に聞いてみたシリーズ／式場のカップルや結婚式に対して考えていること
+                .news__item-date 2020年5月26日
+            .news__item
+              %img.news__item-image{src: '../../sample/09/01/images/place03.jpg', alt: '式場のカップルや結婚式に対して考えていること'}
+              .news__item-information
+                .news__item-text ＼式場に聞いてみたシリーズ／式場のカップルや結婚式に対して考えていること
+                .news__item-date 2020年5月26日
+            .news__item
+              %img.news__item-image{src: '../../sample/09/01/images/place04.jpg', alt: '式場のカップルや結婚式に対して考えていること'}
+              .news__item-information
+                .news__item-text ＼式場に聞いてみたシリーズ／式場のカップルや結婚式に対して考えていること
+                .news__item-date 2020年5月26日
+            .news__item
+              %img.news__item-image{src: '../../sample/09/01/images/place05.jpg', alt: '式場のカップルや結婚式に対して考えていること'}
+              .news__item-information
+                .news__item-text ＼式場に聞いてみたシリーズ／式場のカップルや結婚式に対して考えていること
+                .news__item-date 2020年5月26日
+          .news__more
+            %a.news__more-link　もっと見る
+
+      .sub-contents
+        .ranking
+          %h3.ranking__title 東京都の式場ランキング
+          .ranking__item-container
+            .ranking__item
+              %img.ranking__item-image{src: '../../sample/09/01/images/place01.jpg', alt: '国際みんなのウェディングホテル'}
+              .ranking__item-information
+                %p.ranking__item-name 国際みんなのウェディングホテル
+                .ranking__item-review
+                  %span.material-icons.ranking__item-star star
+                  %span.material-icons.ranking__item-star star
+                  %span.material-icons.ranking__item-star star
+                  %span.material-icons.ranking__item-star star
+                  %span.material-icons.ranking__item-star star
+                  %span.ranking__item-star-count 4.51
+                %p.ranking__item-text 都会にいながら森のような庭園
+            .ranking__item
+              %img.ranking__item-image{src: '../../sample/09/01/images/place02.jpg', alt: '国際みんなのウェディングホテル'}
+              .ranking__item-information
+                %p.ranking__item-name 国際みんなのウェディングホテル
+                .ranking__item-review
+                  %span.material-icons.ranking__item-star star
+                  %span.material-icons.ranking__item-star star
+                  %span.material-icons.ranking__item-star star
+                  %span.material-icons.ranking__item-star star
+                  %span.material-icons.ranking__item-star star
+                  %span.ranking__item-star-count 4.51
+                %p.ranking__item-text 都会にいながら森のような庭園
+            .ranking__item
+              %img.ranking__item-image{src: '../../sample/09/01/images/place03.jpg', alt: '国際みんなのウェディングホテル'}
+              .ranking__item-information
+                %p.ranking__item-name 国際みんなのウェディングホテル
+                .ranking__item-review
+                  %span.material-icons.ranking__item-star star
+                  %span.material-icons.ranking__item-star star
+                  %span.material-icons.ranking__item-star star
+                  %span.material-icons.ranking__item-star star
+                  %span.material-icons.ranking__item-star star
+                  %span.ranking__item-star-count 4.51
+                %p.ranking__item-text 都会にいながら森のような庭園
+            .ranking__item
+              %img.ranking__item-image{src: '../../sample/09/01/images/place04.jpg', alt: '国際みんなのウェディングホテル'}
+              .ranking__item-information
+                %p.ranking__item-name 国際みんなのウェディングホテル
+                .ranking__item-review
+                  %span.material-icons.ranking__item-star star
+                  %span.material-icons.ranking__item-star star
+                  %span.material-icons.ranking__item-star star
+                  %span.material-icons.ranking__item-star star
+                  %span.material-icons.ranking__item-star star
+                  %span.ranking__item-star-count 4.51
+                %p.ranking__item-text 都会にいながら森のような庭園
+            .ranking__item
+              %img.ranking__item-image{src: '../../sample/09/01/images/place05.jpg', alt: '国際みんなのウェディングホテル'}
+              .ranking__item-information
+                %p.ranking__item-name 国際みんなのウェディングホテル
+                .ranking__item-review
+                  %span.material-icons.ranking__item-star star
+                  %span.material-icons.ranking__item-star star
+                  %span.material-icons.ranking__item-star star
+                  %span.material-icons.ranking__item-star star
+                  %span.material-icons.ranking__item-star star
+                  %span.ranking__item-star-count 4.51
+                %p.ranking__item-text 都会にいながら森のような庭園
+          .ranking__more もっと見る
+
+        .area
+          %h2.area__text エリアから探す
+          %ul.area__list
+            %li.area__name 北海道
+            %li.area__name 東北
+            %li.area__name 首都圏
+            %li.area__name 北信越
+            %li.area__name 東海
+            %li.area__name 閑歳
+            %li.area__name 中国・四国
+            %li.area__name 九州・沖縄
 
     %footer.footer
       .footer__contents

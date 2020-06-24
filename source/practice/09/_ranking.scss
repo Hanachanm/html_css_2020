@@ -1,0 +1,49 @@
+.ranking {
+  width: 322px;
+  margin-top: 35px;
+  .ranking__title {
+    color: #3B4B5B;
+    font-size: 22px;
+    border-bottom: 1px solid #D4C29D;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    padding-left: 10px
+  }
+  .ranking__item {
+    display: flex;
+    padding: 10px 0;
+  }
+  .ranking__item-image {
+    width: 90px;
+    object-fit: cover;
+  }
+  .ranking__item-information {
+    padding: 5px 0 0 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .ranking__item-name {
+    color: #3B4B5B;
+    font-size: 14px;
+  }
+
+  .ranking__item-review {
+    display: flex;
+  }
+  .ranking__item-star.material-icons {
+    color: #FF658B;
+    font-size: 14px;
+  }
+  .ranking__item-star-count {
+    color: #FF658B;
+    font-size: 14px;
+  }
+
+  .ranking__item-text {
+    color: #3B4B5B;
+    font-size: 12px;
+    padding-bottom: 19px;
+  }
+}

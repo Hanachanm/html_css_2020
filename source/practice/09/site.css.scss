@@ -5,9 +5,22 @@
 @import 'footer';
 @import 'top-image';
 @import 'feeling-style';
+@import 'news';
+@import 'ranking';
+@import 'area';
 
 .body {
   display: flex;
   flex-flow: column;
   min-height: 100vh;
 }
+.contents {
+  display: flex;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+
+.sub-contents {
+  margin-left: 15px;
+}
+
