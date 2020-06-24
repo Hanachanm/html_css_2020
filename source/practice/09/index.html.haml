@@ -4,7 +4,7 @@
     %meta{charset: 'UTF-8'}
     %meta{name: 'description', content: '実習用のサンプルコードです'}
     %meta{name: 'viewport', content: 'width=device-width, initial-scale=1'}
-    %link{href: "https://fonts.googleapis.com/icon?family=Material+Icons", rel: 'stylesheet'}
+    %link{href: "https://fonts.googleapis.com/icon?family=Material+Icons+Outlined", rel: 'stylesheet'}
     = stylesheet_link_tag 'site'
     %title 最終課題
   %body.body
@@ -21,19 +21,19 @@
     %navigation
       %ul.navigation-bar
         %li.navigation-bar__item
-          %span.material-icons.navigation-bar__item-icon account_balance
+          %span.material-icons-outlined.navigation-bar__item-icon account_balance
           %p.navigation-bar__item-text 結婚式場
         %li.navigation-bar__item
-          %span.material-icons.navigation-bar__item-icon photo_library
+          %span.material-icons-outlined.navigation-bar__item-icon photo_library
           %p.navigation-bar__item-text ニュース
         %li.navigation-bar__item
-          %span.material-icons.navigation-bar__item-icon navigation
+          %span.material-icons-outlined.navigation-bar__item-icon navigation
           %p.navigation-bar__item-text  ドレス
         %li.navigation-bar__item
-          %span.material-icons.navigation-bar__item-icon headset_mic
+          %span.material-icons-outlined.navigation-bar__item-icon headset_mic
           %p.navigation-bar__item-text デスク
         %li.navigation-bar__item
-          %span.material-icons.navigation-bar__item-icon group
+          %span.material-icons-outlined.navigation-bar__item-icon group
           %p.navigation-bar__item-text 花コミュ
 
     .top__image
@@ -42,26 +42,26 @@
     .main-contents
       .feeling-styles
         %h2.feeling-styles__title こだわりから式場を探す
-        %p.feeling-styles__text 会場ジャンルやこだわりから式場を探そう
-        .feeling-style__container
-          .feeling__style
-            %img.feeling-style__image{src: 'https://img2.mwed.jp/c/f=webp:jpeg,ir=auto/smartphone/place_genres/thumbnail/hotelwedding_top.jpg', alt: 'ホテル'}
-            %p.feeling-style__name　ホテル
-          .feeling__style
-            %img.feeling-style__image{ src: 'https://img2.mwed.jp/c/f=webp:jpeg,ir=auto/smartphone/place_genres/thumbnail/restaurantwedding_top.jpg', alt: 'レストラン' }
-            %p.feeling-style__name　レストラン
-          .feeling__style
-            %img.feeling-style__image{ src: 'https://img2.mwed.jp/c/f=webp:jpeg,ir=auto/smartphone/place_genres/thumbnail/housewedding_top.jpg', alt: 'ゲストハウス'}
-            %p.feeling-style__name ゲストハウス
-          .feeling__style
-            %img.feeling-style__image{ src: 'https://img2.mwed.jp/c/f=webp:jpeg,ir=auto/smartphone/place_genres/thumbnail/shrinewedding_top.jpg', alt: '神社・仏閣婚'}
-            %p.feeling-style__name  神社・仏閣婚
-          .feeling__style
-            %img.feeling-style__image{ src: 'https://img2.mwed.jp/c/f=webp:jpeg,ir=auto/smartphone/place_genres/thumbnail/church_top.jpg', alt: '教会・チャペル'}
-            %p.feeling-style__name 教会・チャペル
-          .feeling__style
-            %img.feeling-style__image{ src: 'https://img2.mwed.jp/c/f=webp:jpeg,ir=auto/smartphone/place_genres/thumbnail/weddinghall_top.jpg', alt: '専門式場'}
-            %p.feeling-style__name 専門式場
+        %p.feeling-styles__text 会場ジャンルやこだわりから式場を探そう。
+        .feeling-styles__container
+          .feeling-styles__container-item
+            %img.feeling-styles__container-image{src: 'https://img2.mwed.jp/c/f=webp:jpeg,ir=auto/smartphone/place_genres/thumbnail/hotelwedding_top.jpg', alt: 'ホテル'}
+            %p.feeling-styles__container-name　ホテル
+          .feeling-styles__container-item
+            %img.feeling-styles__container-image{ src: 'https://img2.mwed.jp/c/f=webp:jpeg,ir=auto/smartphone/place_genres/thumbnail/restaurantwedding_top.jpg', alt: 'レストラン' }
+            %p.feeling-styles__container-name　レストラン
+          .feeling-styles__container-item
+            %img.feeling-styles__container-image{ src: 'https://img2.mwed.jp/c/f=webp:jpeg,ir=auto/smartphone/place_genres/thumbnail/housewedding_top.jpg', alt: 'ゲストハウス'}
+            %p.feeling-styles__container-name ゲストハウス
+          .feeling-styles__container-item
+            %img.feeling-styles__container-image{ src: 'https://img2.mwed.jp/c/f=webp:jpeg,ir=auto/smartphone/place_genres/thumbnail/shrinewedding_top.jpg', alt: '神社・仏閣婚'}
+            %p.feeling-styles__container-name  神社・仏閣婚
+          .feeling-styles__container-item
+            %img.feeling-styles__container-image{ src: 'https://img2.mwed.jp/c/f=webp:jpeg,ir=auto/smartphone/place_genres/thumbnail/church_top.jpg', alt: '教会・チャペル'}
+            %p.feeling-styles__container-name 教会・チャペル
+          .feeling-styles__container-item
+            %img.feeling-styles__container-image{ src: 'https://img2.mwed.jp/c/f=webp:jpeg,ir=auto/smartphone/place_genres/thumbnail/weddinghall_top.jpg', alt: '専門式場'}
+            %p.feeling-styles__container-name 専門式場
         .feeling-styles__more　もっと見る
 
     %footer.footer
