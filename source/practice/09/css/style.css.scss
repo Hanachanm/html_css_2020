@@ -67,8 +67,6 @@
   }
 }
 
-
-
 .top-img {
   display: block;
   margin: 0 auto;
@@ -98,7 +96,7 @@
     color: #3B4B5B;
     font-size: 22px;
     font-weight: bold;
-    margin: 51px auto 21px auto;
+    margin: 0 auto 21px auto;
     padding-left: 21.43px;
     padding-bottom: 5px; // 16 - (22/2)
     border-bottom: 4px double #D4C29D;
@@ -131,21 +129,21 @@
     font-weight: bold;
     text-align: center;
   }
+}
 
-  &__more {
-    display: flex;
-    width: 185px;
-    height: 28px;
-    margin-left: auto;
-    font-size: 14px;
-  }
-  
-  &__more-text {
+.more {
+  display: flex;
+  width: 185px;
+  height: 28px;
+  margin-left: auto;
+  font-size: 14px;
+
+  .more__text {
     margin: 10px 0 2px 82px;
     color: #Ac8C4B;
   }
-
-  &__more-icon {
+  
+  .more__icon {
     margin: 8px 8px 0 0;
     background-color: #Ac8C4B;
     color: #FFFFFF;
@@ -153,6 +151,7 @@
     vertical-align: middle;
   }
 }
+
 
 .news {
   height: 859px;
