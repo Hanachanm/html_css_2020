@@ -40,17 +40,43 @@
     %img.top-img{ src: "https://img2.mwed.jp/second_level/categories_main_pc.jpg"}
 
     .wrapper
-      .main
-        .main__place-styles 
-          %h2 こだわりから式場を探す
-        .main__news
-          %h2 ニュースを読んで式場を探す
+      .wrapper__main
+        .place-styles 
+          %h2.place-styles__title こだわりから式場を探す
+          %p.place-styles__description 会場ジャンルやこだわりから式場を探そう。
+          .place-styles__container
+            .place-styles__container-content
+              %img.place-styles__img{ src: "https://img2.mwed.jp/c/f=webp:jpeg,ir=auto/smartphone/place_genres/thumbnail/hotelwedding_top.jpg"}
+              .place-styles__img-name ホテル
+            .place-styles__container-content
+              %img.place-styles__img{ src: "https://img2.mwed.jp/c/f=webp:jpeg,ir=auto/smartphone/place_genres/thumbnail/housewedding_top.jpg"}
+              .place-styles__img-name レストラン
+            .place-styles__container-content
+              %img.place-styles__img{ src: "https://img2.mwed.jp/c/f=webp:jpeg,ir=auto/smartphone/place_genres/thumbnail/restaurantwedding_top.jpg"}
+              .place-styles__img-name ゲストハウス
+            .place-styles__container-content
+              %img.place-styles__img{ src: "https://img2.mwed.jp/c/f=webp:jpeg,ir=auto/smartphone/place_genres/thumbnail/shrinewedding_top.jpg"}
+              .place-styles__img-name 神社・仏閣婚
+            .place-styles__container-content
+              %img.place-styles__img{ src: "https://img2.mwed.jp/c/f=webp:jpeg,ir=auto/smartphone/place_genres/thumbnail/church_top.jpg"}
+              .place-styles__img-name 教会・チャペル
+            .place-styles__container-content
+              %img.place-styles__img{ src: "https://img2.mwed.jp/c/f=webp:jpeg,ir=auto/smartphone/place_genres/thumbnail/weddinghall_top.jpg"}
+              .place-styles__img-name 専門式場
+          .place-styles__more
+            .place-styles__more-text もっと見る
+            -# もっといいアイコンあるかも
+            .place-styles__more-icon.material-icons keyboard_arrow_right
 
-      .side
-        .side__ranking
+        .news
+          %h2 ニュースを読んで式場を探す
+          %p.place-styles__description 結婚式の種類や式場のまとめ記事を読んで、好きな式場を見つけよう。
+
+      .wrapper__side
+        .ranking
           %h2 東京都の式場ランキング
 
-        .side__perfectures
+        .perfectures
           %h2 エリアから探す
 
     .footer
