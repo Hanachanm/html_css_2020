@@ -101,7 +101,7 @@
     margin: 51px auto 21px auto;
     padding-left: 21.43px;
     padding-bottom: 5px; // 16 - (22/2)
-    border-bottom: #D4C29D double 4px;
+    border-bottom: 4px double #D4C29D;
   }
 
   &__description {
@@ -154,8 +154,51 @@
   }
 }
 
-news {
+.news {
   height: 859px;
+
+  &__title {
+    color: #3B4B5B;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 51px auto 21px auto;
+    padding-left: 21.43px;
+    padding-bottom: 5px; // 16 - (22/2)
+    border-bottom: 4px double #D4C29D;
+  }
+
+  &__description {
+    font-size: 14px;
+    margin: 20px 0 20px 10px; //　right は　title の　x軸との差分
+    color: #3B4B5B;
+  }
+
+  &__container {
+    display: flex;
+    margin-left: 10px;
+    border-top: 1px solid #F0EADD;
+    padding: 10px 0;
+  }
+
+  &__img {
+    width: 120px;
+    height: 120px;
+  }
+
+  &__text {
+    margin: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #3B4B5B;
+  }
+
+  &__date {
+    font-size: 12px;
+    color: #8198AE;
+    margin: 38px auto 10px 15px;
+    // left : 44 - (12/2) = 38px  
+    // bottom : 26 - (12/2) - 10 = 10px
+  }
 }
 
 .ranking {
