@@ -1,3 +1,36 @@
 .area {
   width: 322px;
+  margin-top: 45px;
+  .area__text {
+    color: #3B4B5B;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 0 0 5px 10px;
+    border-bottom: 1px solid #d4c29d;
+  }
+  .area__list {
+
+  }
+  .area__name {
+    padding: 12px 10px;
+    border-bottom: 1px solid #F0EADD;
+    color: #3B4B5B;
+    position:relative;
+    &:first-of-type:after {
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      content: ">";
+      color: #d4c29d;
+      font-size: 20px;
+    }
+    &:nth-of-type(n+2):after {
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      content: "+";
+      color: #d4c29d;
+      font-size: 20px;
+    }
+  }
 }
