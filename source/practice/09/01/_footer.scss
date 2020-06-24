@@ -2,11 +2,19 @@
   border: #3b4b5b 1px solid;
 }
 .site-map {
+  display: flex;
+  padding: 40px 50px;
+  .site-map__container {
+    padding: 5px 40px;
+  }
+  .site-map__title {
+    font-size: 22px;
+    border-bottom: 1px #D4C29D solid;
+  }
   .site-map__list {
     list-style-type: none;
-    display: flex;
+    display: block;
   }
   .site-map__item {
-    display: block
   }
 }
