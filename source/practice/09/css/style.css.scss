@@ -203,6 +203,7 @@
 
 .ranking {
   height: 596px;
+  counter-reset: section;
 
   &__title {
     // height: 72px;
@@ -221,19 +222,56 @@
     margin-bottom: 10px;
 
     &::before {
-      content: "1";
-      // color: #FFFFFF;
+      content: "";
       position: absolute;
       top: 0;
-      right: -10px;
+      left: 0;
     
       /* traiangle */
-      border-top: 10px solid #AC8C4B;
-      border-bottom: 10px solid transparent;
-      border-right: 10px solid  transparent;
-      border-left: 10px solid #AC8C4B;
+      border-top: 20px solid #F1F3F6;
+      border-bottom: 20px solid transparent;
+      border-right: 20px solid  transparent;
+      border-left: 20px solid #F1F3F6;
       width: 0;
       height: 0;
+    }
+
+    &::after {
+      counter-increment: section;
+      content: counter(section); 
+      color: #3B4B5B;
+      position: absolute;
+      top: 0;
+      left: 0;
+      font-size: 12px;
+      margin: 5px 0 0 5px;
+    }
+
+    &:first-of-type::before {
+      border-top: 20px solid #AC8C4B;
+      border-left: 20px solid #ac8c4b;
+    }
+
+    &:first-of-type::after {
+      color: #FFFFFF;
+    }
+
+    &:nth-of-type(2)::before {
+      border-top: 20px solid #8198ae;
+      border-left: 20px solid #8198ae;
+    }
+
+    &:nth-of-type(2)::after {
+      color: #FFFFFF;
+    }
+
+    &:nth-of-type(3)::before {
+      border-top: 20px solid #cc9966;
+      border-left: 20px solid #cc9966;
+    }
+
+    &:nth-of-type(3)::after {
+      color: #FFFFFF;
     }
   }
 
