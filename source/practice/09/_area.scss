@@ -10,10 +10,11 @@
     font-weight: bold;
     padding: 0 0 5px 10px;
     border-bottom: 1px solid #d4c29d;
+    @include screen(smartphone) {
+      border-bottom: thick double #F0EADD;
+    }
   }
-  .area__list {
 
-  }
   .area__name {
     padding: 12px 10px;
     border-bottom: 1px solid #F0EADD;

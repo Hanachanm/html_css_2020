@@ -10,10 +10,18 @@
 @import 'area';
 
 .body {
+  width: 100vw;
   display: flex;
   flex-flow: column;
   //min-height: 100vh;
   justify-content: center;
+
+}
+
+.wrap {
+  //width: 100%;
+  //overflow: hidden;
+  //margin: 0 auto;
 }
 .wrapper {
   display: flex;
@@ -22,6 +30,7 @@
   @include screen(smartphone) {
     flex-flow: column;
   }
+
   .sub-contents {
     margin-left: 15px;
     @include screen(smartphone) {
@@ -29,6 +38,7 @@
     }
   }
 }
+
 
 
 

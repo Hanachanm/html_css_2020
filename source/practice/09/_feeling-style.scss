@@ -51,11 +51,7 @@
 
 @include screen(smartphone) {
   .feeling-styles {
-    width: 95vw;
-
-    .feeling-styles__title {
-      width: 100vw;
-    }
+    width: 100vw;
     .feeling-styles__container {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
