@@ -15,7 +15,7 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 980px;
+  max-width: 980px;
   margin: 0 auto;
   .header-item__logo {
     width: 216px;
@@ -188,8 +188,6 @@ html {
   }
 }
 
-
-
 .ranking {
  position: relative;
  height: 596px;
@@ -268,6 +266,10 @@ html {
     color: #3B4B5B;
     border-bottom: 1px solid #F0EADD;
     padding: 12px 9px 12px 10px;
+    line-height: 20px;
+    .prefectures__name {
+      font-size: 14px;
+    }
     .prefectures__sign {
       font-size: 20px;
       font-weight: bold;
@@ -319,6 +321,7 @@ html {
     display: inline;
     font-size: 12px;
     &::after {
+      color: #B0BECC;
       content: "|";
     }
     &:last-child::after {
@@ -350,5 +353,193 @@ html {
     text-align: center;
     line-height: 19px;
     margin-left: 5px;
+  }
+}
+
+@include screen(smartphone) {
+  .header {
+    height: 50px;
+    width: 100vw;
+  }
+  .header-item {
+    min-width: 40px;
+    margin: 20px 38px 10px;
+    .header-item__logo {
+      width: 150px;
+      height: 32.64px;
+    }
+  }
+
+  .search-form {
+    border: none;
+    width: auto;
+    .search-form__icon {
+      margin-left: 0;
+      font-size: 40px;
+    }
+    .search-form__textarea {
+      display: none;
+    }
+  }
+
+  // navigation-bar
+  .navigation-bar {
+    width: 290px;
+    height: 40px;
+    margin: 10px auto 0;
+    .navigation-bar__items {
+      display: flex;
+      justify-content: space-between;
+      margin: 0;
+    }
+    .navigation-bar__item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 42.85px;
+    }
+    .navigation-bar__text {
+      font-size: 10px;
+    }
+    .navigation-bar__icon {
+      font-size: 20px;
+    }
+  }
+
+  //top
+  .top {
+    // width: 375px;
+    margin: 0 auto;
+    .top__image {
+      width: 100vw;
+    }
+  }
+
+  // contents
+  .contents {
+    display: block;
+    margin: 0 auto;
+    .contents__main {
+      width: 100vw;
+      height: 1391px;
+    }
+    .contents__side {
+      width: 100vw;
+      height: 660.75px;
+    }
+  }
+
+  .content-top {
+    .content-top__ranking {
+      border-bottom: double 5px #D4C29D;
+    }
+    .content-top__prefectures {
+      position: relative;
+      height: 71px;
+      border-bottom: double 5px #D4C29D;
+    }
+  }
+  .place-styles {
+    position: relative;
+    height: 513px;
+    .place-styles__contents {
+      display: grid;
+      gap: 10px 15px;
+      grid-template-columns:  1fr 1fr;
+      margin: 10px;
+    }
+    .place-styles__content {
+      position: relative;
+      display: block;
+      width: 100px;
+      height: 117px;
+    }
+    .place-styles__image {
+      width: 169px;
+      height: 113px;
+      object-fit: cover;
+    }
+    .place-styles__text {
+      position: absolute;
+      display: inline-block;
+      color: #ffffff;
+      width: 169px;
+      height: 30px;
+      font-size: 14px;
+      font-weight: bold;
+      background-color: #D4C29D;
+      margin: 0;
+      top: 83px;
+      text-align: center;
+      line-height: 30px;
+    }
+  }
+  .news {
+    height: 853px;
+  }
+  .ranking {
+   position: relative;
+   height: 274.75px;
+   counter-reset: ranking__content;
+   .ranking__contents {
+     position: relative;
+     flex-direction: unset;
+   }
+   .ranking__content {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     &::before {
+       left: 16px;
+     }
+     &::after {
+       left: 20px;
+     }
+   }
+   .ranking__content:nth-of-type(4) {
+     display: none;
+   }
+   .ranking__content:nth-of-type(5) {
+     display: none;
+   }
+   .ranking__image {
+     width: 93.75px;
+     height: 93.75px;
+   }
+    .ranking__text-explain {
+      display: none;
+    }
+  }
+  .prefectures {
+    height: 386px;
+    .prefectures__area {
+      padding: 8px 10px;
+
+    }
+  }
+
+  .footer {
+    background-color: #F9F7F2;
+    height: 111px;
+    color: #3B4B5B;
+  }
+  .footer-content {
+    display: none;
+  }
+  .footer-company {
+    width: 194px;
+    height: 36px;
+    margin: 35px auto auto 50px;
+    .footer-company__information {
+      display: none;
+    }
+    .footer-company__content {
+      &:nth-of-type(2)::after {
+        content: "";
+      }
+      &:last-child::after {
+        content: "";
+      }
+    }
   }
 }
