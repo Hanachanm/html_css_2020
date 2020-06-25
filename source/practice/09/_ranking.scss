@@ -91,20 +91,36 @@
     text-align: right;
   }
   .ranking__more-link {
-    text-decoration: none;
-    font-size: 14px;
-    color: #AC8C4B;
-    &:after{
-      display: inline-block;
-      height: 18px;
-      width: 18px;
-      margin: 8px 8px 0 5px;
-      content: ">";
-      background-color: #AC8C4B;
-      color: #ffffff;
-      border-radius: 50%;
-      text-align: center;
-      line-height: 18px;
+    @include more-link;
+  }
+}
+
+@include screen(smartphone) {
+  .ranking {
+    width: 100vw;
+    .ranking__title {
+      border-bottom: thick double #D4C29D;
+    }
+    .ranking__item-container {
+      display: flex;
+      justify-content: space-around;
+    }
+    .ranking__item {
+      display: flex;
+      flex-direction: column;
+      width: 25vw;
+      &:nth-of-type(n+4){
+        display: none;
+      }
+    }
+    .ranking__item-text {
+      display: none;
+    }
+    .ranking__item-image{
+      width: 25vw;
+      height: 25vw;
+    }
+    .ranking__item-name {
     }
   }
 }

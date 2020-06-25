@@ -5,4 +5,14 @@
   }
 }
 
+@include screen(smartphone) {
+  .top-image {
+    width: 100vw;
+    margin: 0;
+    .top-image__item {
+      width: 100vw;
+    }
+  }
+}
+
 

@@ -41,20 +41,22 @@
     text-align: right;
   }
   .news__more-link {
-    text-decoration: none;
-    font-size: 14px;
-    color: #AC8C4B;
-    &:after{
-      display: inline-block;
-      height: 18px;
-      width: 18px;
-      margin: 8px 8px 0 5px;
-      content: ">";
-      background-color: #AC8C4B;
-      color: #ffffff;
-      border-radius: 50%;
-      text-align: center;
-      line-height: 18px;
+    @include more-link;
+  }
+}
+
+@include screen(smartphone) {
+  .news{
+    width: 100vw;
+    .news__item-container {
+      margin: 0 8px;
+      width: 95vw;
+      .news__item {
+        margin: 0;
+      }
+      .news__item-text {
+        font-weight: bold;
+      }
     }
   }
 }

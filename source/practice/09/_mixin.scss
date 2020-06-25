@@ -1,5 +1,5 @@
 @mixin screen($screen) {
-  @if ($screen == px) {
+  @if ($screen == pc) {
     @media(min-width: 768px) {
       @content;
     }
@@ -7,5 +7,23 @@
     @media(max-width: 768px) {
       @content;
     }
+  }
+}
+
+@mixin more-link {
+  text-decoration: none;
+  font-size: 14px;
+  color: #AC8C4B;
+  &:after{
+    display: inline-block;
+    height: 18px;
+    width: 18px;
+    margin: 8px 8px 0 5px;
+    content: ">";
+    background-color: #AC8C4B;
+    color: #ffffff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 18px;
   }
 }

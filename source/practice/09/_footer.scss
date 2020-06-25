@@ -23,6 +23,9 @@
       font-size: 12px;
       line-height: 18px;
     }
+    @include screen(smartphone) {
+      display: none;
+    }
   }
 
   .footer__corporation {
@@ -41,6 +44,7 @@
       padding: 0 13px 0 13px;
       position: relative;
     }
+
     .footer__corporation-item:first-child {
       padding-left: 0;
     }
@@ -53,4 +57,19 @@
       content: ''
     }
   }
+  @include screen(smartphone) {
+    .footer__corporation {
+      width: 70vw;
+      .footer__corporation-name {
+        display: none;
+      }
+      .footer__corporation-item {
+        &:nth-of-type(2):after {
+          content: "";
+        }
+      }
+    }
+  }
+
 }
+

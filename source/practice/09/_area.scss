@@ -1,6 +1,9 @@
 .area {
   width: 322px;
   margin-top: 45px;
+  @include screen(smartphone) {
+    width: 100vw;
+  }
   .area__text {
     color: #3B4B5B;
     font-size: 22px;
@@ -34,3 +37,4 @@
     }
   }
 }
+

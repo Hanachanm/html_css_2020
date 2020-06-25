@@ -6,7 +6,8 @@
   display:flex;
 
   .header__contents {
-    margin: 0 auto;
+    margin: 20px 30px  10px 30px;
+    //margin: 0 auto;
     width: 980px;
     display: flex;
     justify-content: space-between;
@@ -41,11 +42,21 @@
 
 @include screen(smartphone) {
   .header {
+    width: 100vw;
+    .header__contents {
+      margin: 20px 30px  10px 30px;
+    }
     .header__search {
       border: none;
-    }
-    .header__search-text {
-      display: none;
+      width: 0;
+      padding-right: 10vw;
+
+      .header__search-icon {
+        font-size: 40px;
+      }
+      .header__search-text {
+        display: none;
+      }
     }
   }
 }

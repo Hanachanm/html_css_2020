@@ -12,15 +12,23 @@
 .body {
   display: flex;
   flex-flow: column;
-  min-height: 100vh;
+  //min-height: 100vh;
+  justify-content: center;
 }
 .wrapper {
   display: flex;
   margin: 0 auto;
   padding-bottom: 40px;
+  @include screen(smartphone) {
+    flex-flow: column;
+  }
+  .sub-contents {
+    margin-left: 15px;
+    @include screen(smartphone) {
+      margin: 0;
+    }
+  }
 }
 
-.sub-contents {
-  margin-left: 15px;
-}
+
 
