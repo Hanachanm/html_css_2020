@@ -158,11 +158,21 @@
   }
   .hall {
     margin-bottom: 50px;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
 
     .hall__image {
       width: 100%;
       height: 100%;
+    }
+    .hall__text {
+      background-color: #D4C29D;
+      color: #ffffff;
+      text-align: center;
+      font-size: 14px;
+      font-weight: bold;
+      padding: 5px 30px;
     }
   }
   .news {
@@ -193,18 +203,25 @@
   .ranking {
     //width: 34%;
     width: 100%;
+    white-space: normal;
     .ranking__title {
-      margin: 40px 0 0 0;
-      font-size: 22px;
+      margin: 30px 0 0 0;
+      font-size: 12px;
       border-bottom: #D4C29D 1px solid;
-      font-weight: bold;
       counter-reset: ranking 0;
+    }
+    .ranking__container {
+      display: flex;
+      justify-content: space-around;
     }
 
     .ranking__place {
-      padding: 10px 0 0;
-      display: flex;
+      padding: 10px 20px;
+      display: unset;
       position: relative;
+      &:nth-of-type(n+4) {
+        display: none;
+      }
 
       &::before {
         position: absolute;
@@ -230,7 +247,6 @@
         border-top: 15px solid #cd7f32;
         border-left: 15px solid #cd7f32;
       }
-
       &::after {
         position: absolute;
         top: 15px;
@@ -258,18 +274,20 @@
     }
 
     .ranking__place-information {
-      padding: 5px 0 0 10px;
+      width: 80%;
+      padding: 5px 0 0 0;
     }
 
     .ranking__place-name {
-      font-size: 14px;
+      font-size: 12px;
     }
 
     .ranking__place-score {
-      padding: 15px 0;
+      padding: 5px 0;
     }
 
     .ranking__place-headline {
+      display: none;
       font-size: 12px;
     }
   }
@@ -291,3 +309,4 @@
     }
   }
 }
+
