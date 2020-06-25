@@ -267,8 +267,37 @@
 
 }
 
-.perfectures {
+.area {
   height: 376px;
+
+  &__title {
+    font-size: 22px;
+    font-weight: bold;
+    padding: 45px 157.3px 5px 10.7px;
+    border-bottom: #D4C29D solid 1px;
+    color: #3B4B5B;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    height: 32px;
+    border-bottom: #F0EADD solid 1px;
+  }
+
+  &__name {
+    font-size: 14px;
+    vertical-align: middle;
+    margin: 12px auto 12px 10px;
+    color: #3B4B5B;
+  }
+
+  &__icon {
+    font-size: 20px;
+    color: #D4C29D;
+    vertical-align: middle;
+    margin: 9px 10px 0 0;
+  }
 }
 
 .footer {
