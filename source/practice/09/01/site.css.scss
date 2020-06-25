@@ -11,14 +11,12 @@ html {
   height: 67px;
   border-bottom: 1px solid #F0EADD;
 }
-
 .header-item {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 980px;
   margin: 0 auto;
-
   .header-item__logo {
     width: 216px;
     height: 47px;
@@ -54,13 +52,11 @@ html {
   width: 980px;
   margin: 22px auto 10px;
   color: #8198B6;
-
   .navigation-bar__items {
     display: flex;
     justify-content: space-between;
     margin: 0 163px;
   }
-
   .navigation-bar__text {
     font-size: 16px;
     font-weight: bold;
@@ -89,42 +85,45 @@ html {
     height: 1128px;
     margin-right: 15px;
   }
-  .contents__top_main {
+  .contents__side {
+    width: 322px;
+    height: 1168px;
+  }
+}
+
+.content-top {
+  .content-top_main {
     position: relative;
     height: 62px;
     border-bottom: double 5px #D4C29D;
   }
-  .contents__top_ranking {
+  .content-top_ranking {
     position: relative;
     height: 67px;
     border-bottom: solid 1px #D4C29D;
   }
-  .contents__top_prefectures {
+  .content-top_prefectures {
     position: relative;
     height: 71px;
     border-bottom: solid 1px #D4C29D;
   }
-  .contents__headline_main {
+  .content-top__headline_main {
     position: absolute;
     font-size: 22px;
     font-weight: bold;
     left: 21.43px;
     bottom: 5px;
   }
-  .contents__headline_side {
-      position: absolute;
-      font-size: 22px;
-      font-weight: bold;
-      left: 10.7px;
-      bottom: 5px;
-   }
-  .contents__sentence {
+  .content-top__headline_side {
+    position: absolute;
+    font-size: 22px;
+    font-weight: bold;
+    left: 10.7px;
+    bottom: 5px;
+    }
+  .content-top__sentence {
     margin: 20px 10px;
     font-size: 14px;
-  }
-  .contents__side {
-    width: 322px;
-    height: 1168px;
   }
 }
 
@@ -188,6 +187,8 @@ html {
     }
   }
 }
+
+
 
 .ranking {
  position: relative;
