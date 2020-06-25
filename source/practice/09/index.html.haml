@@ -215,17 +215,35 @@
 
     .footer
       .footer__box
-        .footer-container
-          .footer-container__content
-            %h3 結婚式を探す
-          .footer-container__content
-            %h3 ウェディングアイテムを探す
-          .footer-container__content
-            %h3 結婚式について知る
-        .footer-company 企業情報
-        .footer-company-container
-          .footer-company-information　会社概要
+        .footer__container
+          .footer__container-content
+            %h3.footer__search-title 結婚式を探す
+            .footer__search 結婚式場を探す
+            .footer__search 口コミランキングから
+            .footer__search こだわりウェディング特集から
+            .footer__search 海外（ハワイ）から
+            .footer__search 相談デスク
+            .footer__search ブライダルフェアから
+
+          .footer__container-content
+            %h3.footer__search-title ウェディングアイテムを探す
+            .footer__search ウェディングドレスを探す
+            .footer__search 結婚・婚約指輪を探す
+            .footer__search 前撮り・フォトウェディングを探す
+            .footer__search 演出＆ウェディングアイテムを探す
+
+          .footer__container-content-last
+            %h3.footer__search-title 結婚式について知る
+            .footer__search みんなのウェディングニュース
+            .footer__search 結婚準備マニュアル
+            .footer__search 相談広場
+            .footer__search 口コミを見る
+            .footer__search 費用明細を見る
+
+        .footer__company 企業情報
+        .footer__company-container
+          .footer__company-information-first 会社概要
           |
-          .footer-company-information プライバシーポリシー
+          .footer__company-information プライバシーポリシー
           |
-          .footer-company-information　式場掲載・広告掲載のご案内
+          .footer__company-information 式場掲載・広告掲載のご案内
