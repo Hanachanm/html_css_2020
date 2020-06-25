@@ -1,59 +1,115 @@
 @import "reset";
 
+@mixin screen($screen) {
+  @if ($screen == pc) {
+    @media(min-width: 768px) {
+      @content;
+    }
+  } @else if ($screen == smartphone) {
+    @media(max-width: 768px) {
+      @content;
+    }
+  }
+}
+
 .header {
   width: 100%;
   height: 67px;
   border-bottom: 1px solid #F0EADD;
   margin-top: 20px;
 
+  @include screen(pc) {
+    width: 100%;
+    height: 67px;
+  }
+  @include screen(smartphone) {
+    width: 375px;
+    height: 50px;
+  }
+
   &__container {
     display: flex;
     justify-content: space-between;
-    width: 980px;
     margin-left: auto;
     margin-right: auto;
   }
 
-  &__logo-container {
-    width: 216px;
-    height: 47px;
-    margin: 0 436px 20px 0;
+  &__logo {
+    @include screen(PC) {
+      margin: 0 436px 20px 0;
+      width: 216px;
+      height: 47px;
+    }
+
+    @include screen(smartphone) {
+      margin: 0 110px 17.36px 38px;
+      width: 150px;
+      height: 32.64px;
+    }
   }
-}
 
-.header-search {
-  display: flex;
-  border: 1px solid #8AE3D2;
-  border-radius: 4px;
-  margin: 4px 0 25px 0;
-  width: 328px;
-  height: 38px;
+  &__search {
+    margin: 4px 0 25px 0;
+    width: 328px;
+    height: 38px;
 
-  &__icon {
+    @include screen(pc) {
+      display: flex;
+      border: 1px solid #8AE3D2;
+      border-radius: 4px;
+    }
+  }
+
+  &__search-icon {
     margin: 7px 2px 7px 15px;
     font-size: 24px;
     vertical-align: middle;
     color: #B0BECC;
+
+    @include screen(smartphone) {
+      margin: 0;
+
+      font-size: 40px;
+    }
   }
 
-  &__text {
+  &__search-text {
     font-size: 12px;
     color: #999999;
     margin: 9px 0 9px 0;
     vertical-align: middle;
+
+    @include screen(smartphone) {
+      display: none;
+    }
   }
 }
 
 .navigation-bar {
   display: flex;
   justify-content: center;
-  width: 980px;
-  height: 18px;
-  margin: 20px auto 10px auto;
+
+  @include screen(pc) {
+    width: 980px;
+    height: 18px;
+    margin: 20px auto 10px auto;
+  }
+
+  @include screen(smartphone) {
+    width: 375px;
+    height: 50px;
+    margin: 20px 0 10px 0;
+  }
 
   &__content {
-    display: flex;
-    margin: auto 24px;
+    @include screen(pc) {
+      display: flex;
+      margin: auto 24px;
+    }
+    
+    @include screen(smartphone) {
+      margin: 0 18.93px;
+    }
     color: #8198AE;
   }
 
@@ -62,45 +118,87 @@
   }
   
   &__text {
-    font-size: 16px;
+    @include screen(pc) {
+      font-size: 16px;
+    }
+
+    @include screen(smartphone) {
+      font-size: 10px;
+      margin-top: 5px;
+      text-align: center;
+    }
+
     font-weight: bold;
   }
 }
 
 .top-image {
   display: block;
-  margin: 0 auto;
-  width: 800px;
-  height: 408.16;
+
+  @include screen(pc) {
+    width: 800px;
+    height: 408.16;
+    margin: 0 auto;
+
+  }
+  @include screen(smartphone) {
+    width: 375px;
+    height: 199px;
+  }
 }
 
 .wrapper {
-  display: flex;
-  justify-content: center;
+  @include screen(pc) {
+    display: flex;
+    justify-content: center;
+  }
 
   &__main {
-    width: 643px;
-    height: 1128px;
+    @include screen(pc) {
+      width: 643px;
+      height: 1128px;
+    }
+    @include screen(smartphone) {
+      width: 377px;
+      height: 513px;
+    }
   }
 
   &__side {
-    width: 322px;
-    height: 1168px; 
-    margin-left: 15px;
+    @include screen(pc) {
+      width: 322px;
+      height: 1168px; 
+      margin-left: 15px;
+    }
+    @include screen(smartphone) {
+      width: 375px;
+    }
+
   }
 }
 
 .place-styles {
-  height: 271px;
+  @include screen(pc) {
+    height: 271px;
+  }
 
   &__title {
     color: #3B4B5B;
     font-size: 22px;
     font-weight: bold;
-    margin: 51px auto 21px auto;
-    padding-left: 21.43px;
-    padding-bottom: 5px; // 16 - (22/2)
     border-bottom: 4px double #D4C29D;
+
+    @include screen(pc) {
+      margin: 51px auto 21px auto;
+      padding-left: 21.43px;
+      padding-bottom: 5px; // 16 - (22/2)
+    }
+
+    @include screen(smartphone) {
+      margin: 40px auto 21px auto;
+      padding-left: 12.57px;
+      padding-bottom: 5px; // 16 - (22/2)
+    }
   }
 
   &__description {
@@ -110,25 +208,65 @@
   }
 
   &__container {
-    display: flex;
-    justify-content: space-between;
+    @include screen(pc) {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    @include screen(smartphone) {
+      display: grid;
+      gap: 15px;
+      grid-template-columns: 1fr 1fr;
+    }
   }
 
   &__container-content {
-    width: 100px;
-    height: 117px;
+    @include screen(pc) {
+      width: 100px;
+      height: 117px;
+    }
+    @include screen(smartphone) {
+      width: 169px;
+      height: 133px;
+      position: relative;
+      z-index: 100;
+    }
+
   }
 
   &__image {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
+    @include screen(pc) {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+    }
+    @include screen(smartphone) {
+      width: 169px;
+      height: 133px;
+    }
   }
 
   &__image-name {
-    font-size: 12px;
-    font-weight: bold;
-    text-align: center;
+    @include screen(pc) {
+      font-size: 12px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    @include screen(smartphone) {
+      font-size: 14px;
+      font-weight: bold;
+      position: absolute;
+      z-index: 101;
+
+      bottom: 0px;
+      text-align: center;
+      width: 100%;
+      background-color: #D4C29D;
+      color: #FFFFFF;
+      padding: 8px 0;
+      vertical-align: middle;
+    }
   }
 }
 
@@ -155,7 +293,14 @@
 
 
 .news {
-  height: 859px;
+  @include screen(pc) {
+    height: 859px;
+  }
+  @include screen(smartphone) {
+    width: 375px;
+  }
+
+
 
   &__title {
     color: #3B4B5B;
@@ -387,7 +532,6 @@
     font-size: 12px;
     color: #3B4B5B;
     margin-left: 10px;
-
   }
 
   &__company {
