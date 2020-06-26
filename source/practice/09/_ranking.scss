@@ -1,0 +1,131 @@
+.ranking {
+  width: 322px;
+  margin-top: 35px;
+  counter-reset: ranking-item;
+  .ranking__title {
+    color: #3B4B5B;
+    font-size: 22px;
+    border-bottom: 1px solid #D4C29D;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    font-weight: bold;
+  }
+  .ranking__item {
+    display: flex;
+    padding: 10px 0;
+    position: relative;
+
+    &:before {
+      content: "";
+      position: absolute;
+      border-top: 20px solid #f1f3f6;
+      border-bottom: 20px solid transparent;
+      border-right: 20px solid transparent;
+      border-left: 20px solid #f1f3f6;
+    }
+    &:first-of-type:before {
+      border-top: 20px solid #AC8C4B;
+      border-left: 20px solid #AC8C4B;
+    }
+    &:nth-of-type(2):before {
+      border-top: 20px solid #8198AE;
+      border-left: 20px solid #8198AE;
+    }
+    &:nth-of-type(3):before {
+      border-top: 20px solid #CC9966;
+      border-left: 20px solid #CC9966;
+    }
+    &:after{
+      position: absolute;
+      content: counter(ranking-item);
+      counter-increment: ranking-item;
+      top: 15px;
+      left: 5px;
+      font-size: 12px;
+      color: #3B4B5B;
+    }
+
+    &:nth-of-type(-n+3):after{
+      color: #FFFFFF;
+    }
+  }
+  .ranking__item-image {
+    width: 90px;
+    object-fit: cover;
+  }
+
+
+  .ranking__item-information {
+    padding: 5px 0 0 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .ranking__item-name {
+    color: #3B4B5B;
+    font-size: 14px;
+  }
+
+  .ranking__item-review {
+    display: flex;
+  }
+  .ranking__item-star.material-icons {
+    color: #FF658B;
+    font-size: 14px;
+  }
+  .ranking__item-star-count {
+    color: #FF658B;
+    font-size: 14px;
+  }
+
+  .ranking__item-text {
+    color: #3B4B5B;
+    font-size: 12px;
+    padding-bottom: 19px;
+  }
+  .ranking__more {
+    margin-top: 10px;
+    height: 28px;
+    text-align: right;
+  }
+  .ranking__more-link {
+    @include more-link;
+  }
+}
+
+@include screen(smartphone) {
+  .ranking {
+    width: 100vw;
+    .ranking__title {
+      border-bottom: thick double #D4C29D;
+    }
+    .ranking__item-container {
+      display: flex;
+      justify-content: space-around;
+    }
+    .ranking__item {
+      display: flex;
+      flex-direction: column;
+      width: 25vw;
+      &:nth-of-type(n+4){
+        display: none;
+      }
+    }
+    .ranking__item-text {
+      display: none;
+    }
+    .ranking__item-image {
+      width: 25vw;
+      height: 25vw;
+    }
+    .ranking__item-information {
+      padding-left: 0;
+      padding-bottom: 5px;
+    }
+    .ranking__item-name {
+      padding-bottom: 5px;
+    }
+  }
+}

@@ -1,0 +1,58 @@
+.navigation-bar {
+  width: 980px;
+  height: 18px;
+  display: flex;
+  margin: 22px auto 10px auto;
+  justify-content: center;
+
+  .navigation-bar__item{
+    display: flex;
+    color: #8198AE;
+    font-weight: bold;
+    align-items: center;
+    width: 92px;
+    height: 16px;
+    margin-right: 48px;
+
+    .navigation-bar__item-icon {
+      font-size: 16px;
+    }
+
+    .navigation-bar__item-text {
+      font-family: Roboto;
+      font-size: 16px;
+      margin-left: 5px;
+    }
+  }
+}
+
+@include screen(smartphone) {
+  .navigation-bar {
+    height: 50px;
+    width: 100vw;
+    //padding: 10px 0;
+    margin: 0 auto;
+    border-bottom: 1px solid #f0eadd;
+    justify-content: space-around;
+    align-items: center;
+    .navigation-bar__item {
+      display: flex;
+      flex-direction: column;
+      //margin: 0 auto;
+      width: 42.85px;
+      height: 40px;
+      margin-right: unset;
+      //margin-right: 18.93px;
+      .navigation-bar__item-icon.material-icons {
+        margin-bottom: 5px;
+        font-size: 20px;
+      }
+      .navigation-bar__item-text {
+        font-size: 10px;
+        text-align: center;
+        width: 100%;
+        margin: 0;
+      }
+    }
+  }
+}

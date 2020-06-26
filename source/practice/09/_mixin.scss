@@ -1,0 +1,38 @@
+@mixin screen($screen) {
+  @if ($screen == pc) {
+    @media(min-width: 768px) {
+      @content;
+    }
+  } @else if ($screen == smartphone) {
+    @media(max-width: 768px) {
+      @content;
+    }
+  }
+}
+
+@mixin more-link {
+  text-decoration: none;
+  font-size: 14px;
+  color: #AC8C4B;
+  &:after{
+    display: inline-block;
+    height: 18px;
+    width: 18px;
+    margin: 8px 8px 0 5px;
+    content: ">";
+    background-color: #AC8C4B;
+    color: #ffffff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 18px;
+  }
+}
+
+@mixin title {
+  padding: 0 0 5px 21px;
+  margin-bottom: 20px;
+  color: #3B4B5B;
+  font-weight: bold;
+  border-bottom: thick double #d4c29d;
+  font-size: 22px;
+}
