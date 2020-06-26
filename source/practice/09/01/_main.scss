@@ -250,7 +250,7 @@
       &::after {
         position: absolute;
         top: 15px;
-        left: 5px;
+        left: 25px;
         content: counter(ranking);
         counter-increment: ranking;
         font-size: 12px;
