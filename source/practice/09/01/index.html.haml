@@ -1,0 +1,176 @@
+!!! 5
+%html{ lang: 'ja' }
+  %head
+    %meta{ charset: 'UTF-8' }
+    %meta{ name: 'viewport', content: 'width=device-width, initial-scale=1' }
+    %meta{ rel: "stylesheet", href: "./site.css" }
+    %link{ href: "https://fonts.googleapis.com/icon?family=Material+Icons", rel: 'stylesheet'}
+    %title 実習09
+  %body
+    .wrapper
+      %header.header
+        .header__container
+          .header__logo
+            %img.header__image{ src: './images/logo.png' }
+          .header__search
+            %span.material-icons.header__icon search
+            %input.header__search-input{ type: "text", style: "border:none", placeholder: '例）式場名など気になるキーワード'}
+
+      %nav.nav
+        .nav__container
+          .nav__items
+            .nav__item
+              %span.material-icons account_balance
+              %span 結婚式場
+            .nav__item
+              %span.material-icons.nav__item-icon filter
+              %span ニュース
+            .nav__item
+              %span.material-icons navigation
+              %span ドレス
+            .nav__item
+              %span.material-icons headset
+              %span デスク
+            .nav__item
+              %span.material-icons group
+              %span 花コミュ
+
+      %img.top-image{ src: 'https://img2.mwed.jp/second_level/categories_main_pc.jpg', alt: '式場探し' }
+
+      %main.main
+        .ceremonial-hall
+          %h2.ceremonial-hall__title こだわりの式場を探す
+          %h3.ceremonial-hall__text 会場ジャンルやこだわりから式場を探そう。
+          .hall
+            .hall__icon
+              %img.hall__image{ src: 'https://img2.mwed.jp/c/f=webp:jpeg,ir=auto/smartphone/place_genres/thumbnail/hotelwedding_top.jpg', alt: 'ホテル' }
+              .hall__text ホテル
+            .hall__icon
+              %img.hall__image{ src: 'https://img2.mwed.jp/c/f=webp:jpeg,ir=auto/smartphone/place_genres/thumbnail/restaurantwedding_top.jpg', alt: 'レストラン' }
+              .hall__text レストラン
+            .hall__icon
+              %img.hall__image{ src: 'https://img2.mwed.jp/c/f=webp:jpeg,ir=auto/smartphone/place_genres/thumbnail/housewedding_top.jpg', alt: 'ゲストハウス'}
+              .hall__text ゲストハウス
+            .hall__icon
+              %img.hall__image{ src: 'https://img2.mwed.jp/c/f=webp:jpeg,ir=auto/smartphone/place_genres/thumbnail/shrinewedding_top.jpg', alt: '神社・仏閣婚'}
+              .hall__text 神社・仏閣婚
+            .hall__icon
+              %img.hall__image{ src: 'https://img2.mwed.jp/c/f=webp:jpeg,ir=auto/smartphone/place_genres/thumbnail/church_top.jpg', alt: '教会・チャペル'}
+              .hall__text 教会・チャペル
+            .hall__icon
+              %img.hall__image{ src: 'https://img2.mwed.jp/c/f=webp:jpeg,ir=auto/smartphone/place_genres/thumbnail/weddinghall_top.jpg', alt: '専門式場'}
+              .hall__text 専門式場
+          .ceremonial-hall__more
+            %a.ceremonial-hall__more-link{ href: "#" } もっと見る
+          %h2.ceremonial-hall__title ニュースを読んで式場を探す
+          %h3.ceremonial-hall__text 結婚式の種類や式場のまとめ記事を読んで、好きな式場を見つけよう。
+          .news
+            .news__post
+              %img.news__image{ src: './images/place01.jpg', width: "120", height: "120", alt: '式場のカップルや結婚式に対して考えていること' }
+              .news__textarea
+                .news__title ＼式場に聞いてみたシリーズ／式場のカップルや結婚式に対して考えていること
+                .news__information 2020年5月26日
+            .news__post
+              %img.news__image{ src: './images/place02.jpg', width: "120", height: "120", alt: 'オンライン・電話で相談ができる！式場一覧' }
+              .news__textarea
+                .news__title 【東京都】オンライン・電話で相談ができる！式場一覧
+                .news__information 2020年5月26日
+            .news__post
+              %img.news__image{ src: './images/place03.jpg', width: "120", height: "120", alt: '式場のカップルや結婚式に対して考えていること' }
+              .news__textarea
+                .news__title ＼式場に聞いてみたシリーズ／式場のカップルや結婚式に対して考えていること
+                .news__information 2020年5月26日
+            .news__post
+              %img.news__image{ src: './images/place04.jpg', width: "120", height: "120", alt: '式場のカップルや結婚式に対して考えていること' }
+              .news__textarea
+                .news__title ＼式場に聞いてみたシリーズ／式場のカップルや結婚式に対して考えていること
+                .news__information 2020年5月26日
+            .news__post
+              %img.news__image{ src: './images/place05.jpg', width: "120", height: "120", alt: '式場のカップルや結婚式に対して考えていること' }
+              .news__textarea
+                .news__title ＼式場に聞いてみたシリーズ／式場のカップルや結婚式に対して考えていること
+                .news__information 2020年5月26日
+          .ceremonial-hall__more
+            %a.ceremonial-hall__more-link{ href: "#" } もっと見る
+        .ranking
+          %h3.ranking__title 東京都の式場のランキング
+          .ranking__container
+            .ranking__place
+              %img.ranking__place-image{ src: "./images/place01.jpg", width: "90", height: "90", alt: "国際みんなのウェディングホテル" }
+              .ranking__place-information
+                .ranking__place-name 国際みんなのウェディングホテル
+                .ranking__place-score ★★★★★★★
+                .ranking__place-headline 都会にいながら森のような庭園
+            .ranking__place
+              %img.ranking__place-image{ src: "./images/place02.jpg", width: "90", height: "90", alt: "国際みんなのウェディングホテル" }
+              .ranking__place-information
+                .ranking__place-name 国際みんなのウェディングホテル
+                .ranking__place-score ★★★★★★★
+                .ranking__place-headline 都会にいながら森のような庭園
+            .ranking__place
+              %img.ranking__place-image{ src: "./images/place03.jpg", width: "90", height: "90", alt: "国際みんなのウェディングホテル" }
+              .ranking__place-information
+                .ranking__place-name 国際みんなのウェディングホテル
+                .ranking__place-score ★★★★★★★
+                .ranking__place-headline 都会にいながら森のような庭園
+            .ranking__place
+              %img.ranking__place-image{ src: "./images/place04.jpg", width: "90", height: "90", alt: "国際みんなのウェディングホテル" }
+              .ranking__place-information
+                .ranking__place-name 国際みんなのウェディングホテル
+                .ranking__place-score ★★★★★★★
+                .ranking__place-headline 都会にいながら森のような庭園
+            .ranking__place
+              %img.ranking__place-image{ src: "./images/place05.jpg", width: "90", height: "90", alt: "国際みんなのウェディングホテル" }
+              .ranking__place-information
+                .ranking__place-name 国際みんなのウェディングホテル
+                .ranking__place-score ★★★★★★★
+                .ranking__place-headline 都会にいながら森のような庭園
+          .ranking__more
+            %a.ranking__more-link{ href: "#" } もっと見る
+
+          .search-area
+            %h3.search-area__title エリアから探す
+            .search-area__list
+              .search-area__name 北海道
+              .search-area__name 東北
+              .search-area__name 都市圏
+              .search-area__name 北信越
+              .search-area__name 東海
+              .search-area__name 関西
+              .search-area__name 中国・四国
+              .search-area__name 九州・沖縄
+      %footer.footer
+        .site-map
+          .site-map__container
+            .h2.site-map__title 結婚式を探す
+            %ul.site-map__list
+              %li.site-map__item 結婚式場を探す
+              %li.site-map__item 口コミランキングから
+              %li.site-map__item こだわりウェディング特集から
+              %li.site-map__item 海外（ハワイ）から
+              %li.site-map__item 相談デスク
+              %li.site-map__item ブライダルウェアから
+              %li.site-map__item プランから
+          .site-map__container
+            .h2.site-map__title ウェディングアイテムを探す
+            %ul.site-map__list
+              %li.site-map__item ウェディングドレスを探す
+              %li.site-map__item 結婚・婚約指輪を探す
+              %li.site-map__item 前撮り・フォトウェディングを探す
+              %li.site-map__item 演出&ウェディングアイテムを探す
+          .site-map__container
+            .h2.site-map__title 結婚式について知る
+            %ul.site-map__list
+              %li.site-map__item みんなのウェディングニュース
+              %li.site-map__item 結婚準備マニュアル
+              %li.site-map__item 相談広場
+              %li.site-map__item 口コミを見る
+              %li.site-map__item 費用明細を見る
+        .company
+          %p.company__title 会社情報
+          %ul.company__information
+            %li.company__item 会社概要
+            %li.company__item プライバシーポリシー
+            %br.company__item-break
+            %li.company__item 式場掲載・広告掲載のご案内
+

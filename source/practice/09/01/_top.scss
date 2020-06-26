@@ -1,0 +1,12 @@
+.top-image {
+  display: block;
+  width: 56%;
+  margin: 10px auto 0;
+}
+@include screen(smartphone) {
+  .top-image {
+    display: block;
+    width: 100%;
+    margin: 10px auto 0;
+  }
+}
