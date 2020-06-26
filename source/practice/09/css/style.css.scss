@@ -32,6 +32,10 @@
     justify-content: space-between;
     margin-left: auto;
     margin-right: auto;
+
+    @include screen(pc) {
+      width: 980px;
+    }
   }
 
   &__logo {
@@ -61,14 +65,12 @@
   }
 
   &__search-icon {
-    margin: 7px 2px 7px 15px;
-    font-size: 24px;
-    vertical-align: middle;
+    margin: 10.26px 2px 10.26px 15px;
+    font-size: 17.5px;
     color: #B0BECC;
 
     @include screen(smartphone) {
       margin: 0;
-
       font-size: 40px;
     }
   }
@@ -76,7 +78,7 @@
   &__search-text {
     font-size: 12px;
     color: #999999;
-    margin: 9px 0 9px 0;
+    margin: 11px 0 11px 0;
     vertical-align: middle;
 
     @include screen(smartphone) {
@@ -98,7 +100,7 @@
   @include screen(smartphone) {
     width: 375px;
     height: 50px;
-    margin: 20px 0 10px 0;
+    margin: 5px 0 10px 0;
   }
 
   &__content {
@@ -108,13 +110,15 @@
     }
     
     @include screen(smartphone) {
-      margin: 0 18.93px;
+      margin: auto 18.93px 0 18.93px;
     }
     color: #8198AE;
   }
 
   &__icon {
-    font-size: 24px;
+    font-size: 20px;
+    display: block;
+    text-align: center;
   }
   
   &__text {
@@ -186,7 +190,7 @@
     color: #3B4B5B;
     font-size: 22px;
     font-weight: bold;
-    border-bottom: 4px double #D4C29D;
+    border-bottom: 5px double #D4C29D;
 
     @include screen(pc) {
       margin: 51px auto 21px auto;
@@ -283,11 +287,23 @@
   }
   
   &__icon {
-    margin: 8px 8px 0 0;
-    background-color: #Ac8C4B;
-    color: #FFFFFF;
+    position: relative;
+    content: "";
+    background-color: #ac8c4b;
     border-radius: 50%;
-    vertical-align: middle;
+    height: 20px;
+    width: 20px;
+    line-height: 18px;
+    margin-left: 4px;
+    margin-top: 7px;
+
+    &:before {
+      content: ">";
+      position: absolute;
+      color: white;
+      top: 0;
+      left: 7px;
+    }
   }
 }
 
@@ -306,7 +322,7 @@
     margin: 0 auto 21px auto;
     padding-left: 21.43px;
     padding-bottom: 5px; // 16 - (22/2)
-    border-bottom: 4px double #D4C29D;
+    border-bottom: 5px double #D4C29D;
 
     @include screen(smartphone) {
       padding: 50px 0 5px 12.5px;
@@ -354,11 +370,6 @@
     height: 596px;
   }
 
-  @include screen(smartphone) {
-    // height: 375px;
-  }
-
-
   &__title {
     // height: 72px;
     font-size: 22px;
@@ -369,7 +380,7 @@
     margin-bottom: 10px;
 
     @include screen(smartphone) {
-      border-bottom: 4px double #D4C29D;
+      border-bottom: 5px double #D4C29D;
       padding: 50px 0 5px 12.5px
     }
   }
@@ -379,7 +390,7 @@
       display: flex;
       justify-content: space-between;
       // width: 326px;
-      margin: 20px 0 0 24.5px;
+      margin: 20px 14.5px 0 14.5px;
     }
   }
   &__container {
@@ -498,7 +509,7 @@
   }
 
   &__icon {
-    font-size: 24px;
+    font-size: 14px;
     margin-top: 13px;
 
     @include screen(smartphone) {
@@ -523,7 +534,7 @@
     @include screen(pc) {
       font-size: 14px;
       margin-top: 10px;
-      padding-top: 6.5px; // (27 - 14)/2
+      padding-top: 3.5px; // (27 - 14)/2
     }
 
     @include screen(smartphone) {
@@ -545,7 +556,7 @@
     color: #3B4B5B;
 
     @include screen(smartphone) {
-      border-bottom: #D4C29D double 4px;
+      border-bottom: 5px double #D4C29D;
     }
   }
 
@@ -564,10 +575,11 @@
   }
 
   &__icon {
+    display: block;
     font-size: 20px;
+    font-weight: bold;
     color: #D4C29D;
-    vertical-align: middle;
-    margin: 9px 10px 0 0;
+    margin: 7px 10px 8px 0;
   }
 }
 
