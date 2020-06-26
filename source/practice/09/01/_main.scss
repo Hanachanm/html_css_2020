@@ -16,6 +16,27 @@
     padding: 20px 0 10px;
     font-size: 14px;
   }
+  .ceremonial-hall__more {
+    margin: 10px 0 30px;
+    text-align:right
+  }
+  .ceremonial-hall__more-link {
+    text-decoration: none;
+    color: #ac8c4b;
+    font-size: 14px;
+    &:after {
+      display: inline-block;
+      content: ">";
+      color: white;
+      background-color: #ac8c4b;
+      border-radius: 50%;
+      height: 18px;
+      min-width: 18px;
+      line-height: 18px;
+      text-align: center;
+      margin-left: 5px;
+    }
+  }
 }
 .hall {
   margin-bottom: 50px;
@@ -118,6 +139,27 @@
   .ranking__place-headline {
     font-size: 12px;
   }
+  .ranking__more {
+    margin: 10px 0 30px;
+    text-align:right
+  }
+  .ranking__more-link {
+    text-decoration: none;
+    color: #ac8c4b;
+    font-size: 14px;
+    &:after {
+      display: inline-block;
+      content: ">";
+      color: white;
+      background-color: #ac8c4b;
+      border-radius: 50%;
+      height: 18px;
+      min-width: 18px;
+      line-height: 18px;
+      text-align: center;
+      margin-left: 5px;
+    }
+  }
 }
 .search-area {
   .search-area__title {
@@ -129,9 +171,20 @@
   .search-area__list {
   }
   .search-area__name {
+    position: relative;
     font-size: 14px;
     padding: 15px;
     border-bottom: #D4C29D 1px solid;
+  }
+  .search-area__name::after {
+    position: absolute;
+    right: 5px;
+    color: #d4c29d;
+    content: "+";
+    font-size: 20px;
+  }
+  .search-area__name:first-of-type::after {
+    content: "＞";
   }
 }
 @include screen(smartphone) {
@@ -155,11 +208,16 @@
       padding: 20px 0 10px;
       font-size: 14px;
     }
+    .ceremonial-hall__more {
+    }
+    .ceremonial-hall__more-link {
+    }
   }
   .hall {
     margin-bottom: 50px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
 
 
     .hall__image {
@@ -216,7 +274,7 @@
     }
 
     .ranking__place {
-      padding: 10px 20px;
+      padding: 10px 15px;
       display: unset;
       position: relative;
       &:nth-of-type(n+4) {
@@ -250,7 +308,7 @@
       &::after {
         position: absolute;
         top: 15px;
-        left: 25px;
+        left: 20px;
         content: counter(ranking);
         counter-increment: ranking;
         font-size: 12px;
