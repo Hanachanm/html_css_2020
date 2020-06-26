@@ -24,6 +24,10 @@
       justify-content: space-around;
     }
     .nav__item {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      margin: 0;
       font-size: 12px;
     }
   }
