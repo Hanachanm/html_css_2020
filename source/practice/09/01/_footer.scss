@@ -36,6 +36,9 @@
   .company__item {
     font-size: 12px;
     //border-left: 1px #999999 solid;
+    .company__item-break {
+      display: none;
+    }
     &::after {
       content: " | ";
       padding: 0 10px;
@@ -45,6 +48,45 @@
       content: "";
     }
 
+  }
+}
+@include screen(smartphone) {
+  .footer {
+    background-color: #F9F7F2;
+    border: #3b4b5b 1px solid;
+  }
+  .site-map {
+    display: none;
+  }
+  .company {
+    margin: 50px;
+    .company__title {
+      display: none;
+    }
+    .company__information {
+      display: unset;
+    }
+    .company__item {
+      display: inline;
+      font-size: 12px;
+      //border-left: 1px #999999 solid;
+      //.company__item-break {
+      //  content: "\A";
+      //  white-space: pre;
+      //}
+      &::after {
+        content: "";
+        padding: 0 10px;
+        color: #b0becc;
+      }
+      &:first-of-type::after {
+        content: " | ";
+      }
+      &:last-of-type::after {
+        content: "";
+      }
+
+    }
   }
 }
 
