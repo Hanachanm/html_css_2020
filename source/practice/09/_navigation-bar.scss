@@ -30,7 +30,7 @@
   .navigation-bar {
     height: 50px;
     width: 100vw;
-    padding: 10px 0;
+    //padding: 10px 0;
     margin: 0 auto;
     border-bottom: 1px solid #f0eadd;
     justify-content: space-around;
@@ -41,7 +41,8 @@
       //margin: 0 auto;
       width: 42.85px;
       height: 40px;
-      margin-right: 18.93px;
+      margin-right: unset;
+      //margin-right: 18.93px;
       .navigation-bar__item-icon.material-icons {
         margin-bottom: 5px;
         font-size: 20px;

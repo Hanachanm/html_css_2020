@@ -43,6 +43,7 @@
 @include screen(smartphone) {
   .header {
     width: 100vw;
+    margin-bottom: 10px;
     .header__contents {
       margin: 20px 30px  10px 30px;
     }

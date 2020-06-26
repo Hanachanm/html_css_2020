@@ -48,6 +48,13 @@
 @include screen(smartphone) {
   .news{
     width: 100vw;
+    .news__title{
+      padding-left: 12.5px;
+    }
+    .news__text {
+      padding: 20px 10px;
+      line-height: 20px;
+    }
     .news__item-container {
       margin: 0 8px;
       width: 95vw;

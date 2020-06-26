@@ -116,12 +116,15 @@
     .ranking__item-text {
       display: none;
     }
-    .ranking__item-image{
+    .ranking__item-image {
       width: 25vw;
       height: 25vw;
     }
     .ranking__item-information {
       padding-left: 0;
+      padding-bottom: 5px;
+    }
+    .ranking__item-name {
       padding-bottom: 5px;
     }
   }
