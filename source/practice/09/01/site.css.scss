@@ -79,12 +79,10 @@ html {
   max-width: 980px;
   margin: 0 auto 10px;
   .contents__main {
-    width: 643px;
     height: 1128px;
     margin-right: 15px;
   }
   .contents__side {
-    width: 322px;
     min-height: 1168px;
   }
 }
@@ -258,21 +256,24 @@ html {
   position: relative;
   min-height: 376px;
   .prefectures__area {
-    display: flex;
-    justify-content: space-between;
-    text-decoration: none;
-    color: #3B4B5B;
     border-bottom: 1px solid #F0EADD;
     padding: 12px 9px 12px 10px;
-    line-height: 20px;
-    .prefectures__name {
-      font-size: 14px;
-    }
-    .prefectures__sign {
+    &::after {
+      position: absolute;
+      content: "+";
       font-size: 20px;
       font-weight: bold;
       color: #D4C29D;
+      right: 9px;
     }
+    &:first-of-type::after {
+      content: ">";
+    }
+  }
+  .prefectures__area-link {
+    text-decoration: none;
+    color: #3B4B5B;
+    font-size: 14px;
   }
 }
 
@@ -281,19 +282,21 @@ html {
   background-color: #F9F7F2;
   color: #3B4B5B;
   padding: 30px 0;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .footer-contents {
     display: flex;
-    width: 980px;
+    max-width: 980px;
     justify-content: space-between;
-    margin: 0 auto;
+    margin: 0 auto 45px;
   }
 .footer-content__top {
   border-bottom: 1px solid #D4C29D;
   margin-bottom: 10px;
 }
 .footer-content {
-  width: 301px;
+  min-width: 301px;
   .footer-content__headline {
     font-size: 22px;
     margin: 0 0 5px 10px;
@@ -309,14 +312,20 @@ html {
 .footer-company {
   width: 980px;
   font-size: 14px;
-  margin: 45px auto 10px;
+  margin: 0 auto;
 
   .footer-company__information {
     margin-bottom: 10px;
   }
   .footer-company__content {
+      display: flex;
+      flex-wrap: wrap;
+   }
+  .footer-company__content-link {
     display: inline;
     font-size: 12px;
+    text-decoration: none;
+    color: #3B4B5B;
     &::after {
       color: #B0BECC;
       content: "|";
@@ -324,10 +333,6 @@ html {
     &:last-child::after {
       content: "";
     }
-  }
-  .footer-company__content-link {
-    text-decoration: none;
-    color: #3B4B5B;
   }
 }
 
@@ -405,7 +410,6 @@ html {
 
   //top
   .top {
-    // width: 375px;
     margin: 0 auto;
     .top__image {
       width: 100vw;
@@ -435,9 +439,9 @@ html {
       border-bottom: double 5px #D4C29D;
     }
   }
+
   .place-styles {
     position: relative;
-    min-height: unset;
     .place-styles__contents {
       display: grid;
       gap: 10px 15px;
@@ -453,7 +457,6 @@ html {
     .place-styles__image {
        width: 100%;
        height: 30vw;
-
     }
     .place-styles__text {
       position: absolute;
@@ -473,9 +476,7 @@ html {
       z-index: 100;
     }
   }
-  .news {
-    height: unset;
-  }
+
   .ranking {
    position: relative;
    min-height: unset;
@@ -493,12 +494,6 @@ html {
      align-items: center;
      margin: 10px 0;
      width: 25vw;
-     &::before {
-      //  left: 16px;
-     }
-     &::after {
-      //  left: 20px;
-     }
    }
    .ranking__content:nth-of-type(4) {
      display: none;
@@ -518,34 +513,19 @@ html {
     }
   }
   .prefectures {
-    min-height: unset;
+    // min-height: unset;
     .prefectures__area {
       padding: 8px 10px;
-
     }
   }
 
-  .footer {
-    background-color: #F9F7F2;
-    color: #3B4B5B;
-  }
-  .footer-content {
+  .footer-contents {
     display: none;
   }
   .footer-company {
-    width: 194px;
-    height: 36px;
-    margin: 35px auto auto 50px;
-    .footer-company__information {
-      display: none;
-    }
-    .footer-company__content {
-      &:nth-of-type(2)::after {
-        content: "";
-      }
-      &:last-child::after {
-        content: "";
-      }
-    }
+     width: 70vw;
+  }
+  .footer-company__information {
+    display: none;
   }
 }
