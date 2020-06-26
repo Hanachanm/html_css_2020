@@ -1,13 +1,8 @@
 .news {
   width: 643px;
   .news__title {
-    padding: 0 0 5px 21px;
     margin-top: 30px;
-    color: #3B4B5B;
-    font-size: 22px;
-    border-bottom: thick double #D4C29D;
-    margin-bottom: 20px;
-    font-weight: bold;
+    @include title;
   }
   .news__text {
     color: #3B4B5B;

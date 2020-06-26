@@ -27,3 +27,12 @@
     line-height: 18px;
   }
 }
+
+@mixin title {
+  padding: 0 0 5px 21px;
+  margin-bottom: 20px;
+  color: #3B4B5B;
+  font-weight: bold;
+  border-bottom: thick double #d4c29d;
+  font-size: 22px;
+}

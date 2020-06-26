@@ -1,16 +1,10 @@
 .feeling-styles {
   margin-top: 30px;
   width: 643px;
-  //height: 271px;
   position: relative;
 
   .feeling-styles__title {
-    color: #3B4B5B;
-    border-bottom: thick double #D4C29D;
-    font-size: 22px;
-    padding: 0 0 5px 21px;
-    margin-bottom: 20px;
-    font-weight: bold;
+    @include title;
   }
 
   .feeling-styles__text {
@@ -20,21 +14,21 @@
     margin-bottom: 18px;
   }
 
-  .feeling-styles__container {
+  .feeling-styles__item-container {
     display: flex;
   }
-  .feeling-styles__container-item {
+  .feeling-styles__item {
     margin-left: 8px;
     &:first-child{
       margin-left: 0;
     }
   }
-  .feeling-styles__container-image {
+  .feeling-styles__item-image {
     height: 100px;
     width: 100px;
     object-fit: cover;
   }
-  .feeling-styles__container-name {
+  .feeling-styles__item-name {
     color: #000000;
     font-size: 12px;
     text-align: center;
@@ -58,39 +52,39 @@
     .feeling-styles__text {
       padding-left: 10px;
     }
-    .feeling-styles__container {
+    .feeling-styles__item-container {
       display: grid;
       width: 95vw;
       margin: 0 auto;
       grid-template-columns: repeat(2, 1fr);
       gap: 10px 15px;
-      .feeling-styles__container-item {
+    }
+    .feeling-styles__item {
+      &:first-child {
         margin: 0 auto;
-        //&:first-of-type {
-        //  margin-left: 8px;
-        //}
-        position: relative;
       }
-      .feeling-styles__container-image {
-        width: 45vw;
-        height: 30vw;
-        object-fit: cover;
-        z-index: 100;
-      }
-      .feeling-styles__container-name {
-        position:absolute;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        box-sizing: border-box;
-        color: #ffffff;
-        background-color: #d4c29d;
-        font-size: 14px;
-        line-height: 30px;
-        height: 30px;
-        width: 45vw;
-        z-index: 101;
-      }
+      margin: 0 auto;
+      position: relative;
+    }
+    .feeling-styles__item-image {
+      width: 45vw;
+      height: 30vw;
+      object-fit: cover;
+      z-index: 100;
+    }
+    .feeling-styles__item-name {
+      position:absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      box-sizing: border-box;
+      color: #ffffff;
+      background-color: #d4c29d;
+      font-size: 14px;
+      line-height: 30px;
+      height: 30px;
+      width: 45vw;
+      z-index: 101;
     }
   }
 }
