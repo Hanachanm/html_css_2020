@@ -160,7 +160,7 @@
     }
     @include screen(smartphone) {
       width: 377px;
-      height: 513px;
+      // height: 513px;
     }
   }
 
@@ -291,7 +291,6 @@
   }
 }
 
-
 .news {
   @include screen(pc) {
     height: 859px;
@@ -299,8 +298,6 @@
   @include screen(smartphone) {
     width: 375px;
   }
-
-
 
   &__title {
     color: #3B4B5B;
@@ -310,6 +307,10 @@
     padding-left: 21.43px;
     padding-bottom: 5px; // 16 - (22/2)
     border-bottom: 4px double #D4C29D;
+
+    @include screen(smartphone) {
+      padding: 50px 0 5px 12.5px;
+    }
   }
 
   &__description {
@@ -347,8 +348,16 @@
 }
 
 .ranking {
-  height: 596px;
   counter-reset: section;
+
+  @include screen(pc) {
+    height: 596px;
+  }
+
+  @include screen(smartphone) {
+    // height: 375px;
+  }
+
 
   &__title {
     // height: 72px;
@@ -358,13 +367,35 @@
     padding: 45px 1.07px 5px 1.07px;
     border-bottom: 1px solid #D4C29D;
     margin-bottom: 10px;
+
+    @include screen(smartphone) {
+      border-bottom: 4px double #D4C29D;
+      padding: 50px 0 5px 12.5px
+    }
   }
 
+  &__chapel-container {
+    @include screen(smartphone) {
+      display: flex;
+      justify-content: space-between;
+      // width: 326px;
+      margin: 20px 0 0 24.5px;
+    }
+  }
   &__container {
     position: relative;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
+
+    @include screen(pc) {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+
+    @include screen(smartphone) {
+      width: 102px;
+      height: 144.75px;
+      margin: 0 10px;
+    }
 
     &::before {
       content: "";
@@ -418,21 +449,47 @@
     &:nth-of-type(3)::after {
       color: #FFFFFF;
     }
+
+    @include screen(smartphone) {
+      &:nth-of-type(4) {
+        display: none;
+      }
+      &:nth-of-type(5) {
+        display: none;
+      }
+    }
   }
 
   &__image {
     width: 90px;
     height: 90px;
+
+    @include screen(smartphone) {
+      width: 93.75px;
+      height: 93.75px;
+    }
   }
   
   &__information {
-    width: 297px;
-    margin-left: 5px;
+    @include screen(pc) {
+      width: 297px;
+      margin-left: 5px;
+    }
+    @include screen(smartphone) {
+      width: 102px;
+    }
   }
 
   &__name {
-    font-size: 14px;
-    color: 3B4B5B;    
+    color: 3B4B5B;  
+
+    @include screen(pc) {
+      font-size: 14px;
+    }
+  
+    @include screen(smartphone) {
+      font-size: 12px;
+    }
   }
 
   &__evaluation {
@@ -443,19 +500,36 @@
   &__icon {
     font-size: 24px;
     margin-top: 13px;
+
+    @include screen(smartphone) {
+      font-size: 12px;
+      margin-top: 6.25px;
+    }
   }
 
   &__text {
     font-size: 12px;
     color: #3B4B5B;
     margin-top: 10px;
+
+    @include screen(smartphone) {
+      display: none;
+    }
   }
 
   &__num {
     display: inline-block;
-    font-size: 14px;
-    margin-top: 10px;
-    padding-top: 6.5px; // (27 - 14)/2
+
+    @include screen(pc) {
+      font-size: 14px;
+      margin-top: 10px;
+      padding-top: 6.5px; // (27 - 14)/2
+    }
+
+    @include screen(smartphone) {
+      font-size: 12px;
+      margin-top: 6px;
+    }
   }
 
 }
@@ -469,6 +543,10 @@
     padding: 45px 157.3px 5px 10.7px;
     border-bottom: #D4C29D solid 1px;
     color: #3B4B5B;
+
+    @include screen(smartphone) {
+      border-bottom: #D4C29D double 4px;
+    }
   }
 
   &__container {
@@ -497,6 +575,12 @@
   width: 100%;
   height: 310px;
   background-color: #F9F7F2;
+
+  @include screen(smartphone) {
+    width: 375px;
+    height: 111px;
+
+  }
   
   &__box {
     width: 980px;
@@ -507,6 +591,10 @@
   &__container {
     display: flex;
     justify-content: center;
+
+    @include screen(smartphone) {
+      display: none;
+    }
   }
 
   &__container-content {   
@@ -538,12 +626,22 @@
     font-size: 14px;
     color: #3B4B5B;
     margin-bottom: 10px;
+
+    @include screen(smartphone) {
+      display: none;
+    }
   }
 
   &__company-container {
     display: flex;
     color: #3B4B5B;
     font-size: 12px;
+
+    @include screen(smartphone) {
+      width: 375px;
+      padding: 35px 181px 40px 50px;
+      flex-wrap: wrap;
+    }
   }
 
   &__company-information-first {
@@ -552,5 +650,17 @@
 
   &__company-information {
     margin: 0 13px;
+  }
+
+  &__pipe {
+    @include screen(smartphone) {
+      display: none;
+    }
+  }
+
+  &__company-information-last {
+    @include screen(smartphone) {
+      margin-right: 13px;
+    }
   }
 }
